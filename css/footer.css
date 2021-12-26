@@ -1,0 +1,41 @@
+.footer{
+    padding: 25px;
+    background-color: black;
+    margin: auto;
+}
+
+.footer p{
+    color: white;
+}
+
+.footer .row{
+    margin: auto;
+}
+
+.footer-column{
+    padding: 10px;
+}
+
+.follow{
+    text-align: center;
+}
+
+.social-list{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+.social-list li{
+    margin: 10px;
+    border-radius: 2px;
+    transition: 0.4s ease;
+    padding: 5px;
+    color: white;
+}
+
+.social-list li:hover{
+    background-color: #e0dfdf;
+    color: black;
+}

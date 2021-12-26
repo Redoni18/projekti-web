@@ -1,0 +1,68 @@
+.contact-us-container {
+    background-color: white;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    padding: 10px;
+    width: 600px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    align-items: center;
+ }
+.InputN {
+    color: #141414;
+    line-height: 1.2;
+    font-size: 12px;
+    display: block;
+    width: 88%;
+    background: transparent;
+    height: 40px;
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+.InputE {
+    color: #141414;
+    line-height: 1.2;
+    font-size: 12px;
+    display: block;
+    width: 88%;
+    background: transparent;
+    height: 40px;
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+.InputM {
+    color: #141414;
+    line-height: 1.2;
+    font-size: 13px;
+    display: block;
+    width: 90%;
+    background: transparent;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.formButton {
+    color: #141414;
+    line-height: 1.2;
+    font-size: 12px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 25px;
+    border: 1px solid gray;
+ }
+ 
+.name-email-input{
+    display: flex;
+}
