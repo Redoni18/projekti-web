@@ -3,7 +3,7 @@
 }
 
 .mySlides {display: none;}
-img {vertical-align: middle;}
+.mySlides img {vertical-align: middle; height:350px;}
 
 /* Slideshow container */
 .image-slideshow {

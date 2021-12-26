@@ -34,8 +34,8 @@
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
                                 <div class="dropdown-content">
-                                  <a href="./sports&entertainment.html">Technology</a>
-                                  <a href="./sports&entertainment.html">Apparel</a>
+                                  <a href="./technology.html">Technology</a>
+                                  <a href="./apparel.html">Apparel</a>
                                   <a href="./sports&entertainment.html">Sports & Entertainment</a>
                                   <a href="./home&garden.html">Home & Garden</a>
                                 </div>
@@ -52,15 +52,16 @@
         <div class="contact-us-container">
             <form style="display: block;">
                 <div class="name-email-input">
-                    <input class="InputN" type="text" placeholder="Your name">
-                    <input class="InputE" type="text" placeholder="Your email">
+                    <input class="InputN" id="emri" type="text" placeholder="Your name">
+                    <input class="InputE" id="email" type="text" placeholder="Your email">
                 </div>
                 <div class="message-input">
-                    <textarea class="InputM" type="text" placeholder="Your message" style="resize: none;"></textarea>
+                    <textarea class="InputM" id="mesazhi" type="text" placeholder="Your message" style="resize: none;"></textarea>
                 </div>
                 <br>
-                <button class="formButton">Send Message</button>
+                <button class="formButton"  type="button" onclick="validoMesazhin()">Send Message</button>
             </form>
+            <script src="../js/contact-us-validation.js"></script>
         </div>
         <div class="footer">
             <div class="row">
