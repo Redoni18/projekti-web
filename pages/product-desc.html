@@ -18,23 +18,14 @@
         <link rel="stylesheet" href="../css/footer.css">
     </head>
     <body>
-        <div class="homepage">
+        <div class="differentPage">
             <div class="container">
                 <div class="header-div">
                     <div class="logo-div">
                         <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
                     </div>
-                    <div class="search-container">
-                        <div class="search">
-                            <input type="text" class="searchTerm" placeholder="Search for products...">
-                            <button type="submit" class="searchButton">
-                              <i class="fa fa-search"></i>
-                           </button>
-                         </div>
-
-                    </div>
                     <nav>
-                        <ul class="nav-list">
+                        <ul class="nav-list" id="menu-items">
                             <li><a href="../index.html">Home</a></li>
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
@@ -45,12 +36,13 @@
                                   <a href="./home&garden.html">Home & Garden</a>
                                 </div>
                               </div> 
-                              <li><a href="./about-us.html">About us</a></li>
-                              <li><a href="./contact-us.html">Contact us</a></li>
-                              <li><a href="./login.html">Account</a></li>
-                              <li><a href="./cart.html"><i class="fa fa-cart-plus"></i></a></li>
+                            <li><a href="./about-us.html">About us</a></li>
+                            <li><a href="./contact-us.html">Contact us</a></li>
+                            <li><a href="./login.html">Account</a></li>
+                            <li><a href="./cart.html"><i class="fa fa-cart-plus"></i></a></li>
                         </ul>
                     </nav>
+                    <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">
                 </div>
             </div>
         </div>
@@ -109,6 +101,6 @@
                 </div>
             </div>
         </div>
-
+        <script src="../menuToggler.js"></script>
     </body>
 </html>

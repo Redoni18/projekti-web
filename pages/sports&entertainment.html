@@ -14,30 +14,21 @@
         <link rel="stylesheet" href="../css/footer.css">
     </head>
     <body>
-        <div class="homepage">
+        <div class="differentPage">
             <div class="container">
                 <div class="header-div">
                     <div class="logo-div">
                         <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
                     </div>
-                    <div class="search-container">
-                        <div class="search">
-                            <input type="text" class="searchTerm" placeholder="Search for products...">
-                            <button type="submit" class="searchButton">
-                              <i class="fa fa-search"></i>
-                           </button>
-                         </div>
-
-                    </div>
                     <nav>
-                        <ul class="nav-list">
+                        <ul class="nav-list" id="menu-items">
                             <li><a href="../index.html">Home</a></li>
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
                                 <div class="dropdown-content">
                                   <a href="./technology.html">Technology</a>
                                   <a href="./apparel.html">Apparel</a>
-                                  <a href="./sports&entertainment.html">Sports & Entertainment</a>
+                                  <a href="#">Sports & Entertainment</a>
                                   <a href="./home&garden.html">Home & Garden</a>
                                 </div>
                               </div> 
@@ -47,6 +38,7 @@
                             <li><a href="./cart.html"><i class="fa fa-cart-plus"></i></a></li>
                         </ul>
                     </nav>
+                    <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">
                 </div>
             </div>
         </div>
@@ -250,5 +242,6 @@
         </div>
 
         <script src="../main.js"></script>
+        <script src="../menuToggler.js"></script>
     </body>
 </html>
