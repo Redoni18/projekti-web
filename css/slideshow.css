@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 760px) {
   .image-slideshow {
     max-width: 500px;
     height: 280px;
@@ -93,6 +93,22 @@
 
   .mySlides img {
     height: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .image-slideshow {
+    max-width: 350px;
+    height: 280px;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .mySlides img {
+    height: 180px;
   }
 }
 

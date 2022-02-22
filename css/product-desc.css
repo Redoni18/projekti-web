@@ -38,7 +38,7 @@
   border-radius: 20px;
   border: 1px solid gray;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 760px) {
   .product-desc {
     height: 500px;
     width: 100%;
