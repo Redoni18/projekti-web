@@ -29,16 +29,16 @@
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
                                 <div class="dropdown-content">
-                                  <a href="./pages/technology.html">Technology</a>
-                                  <a href="./pages/apparel.html">Apparel</a>
-                                  <a href="./pages/sports&entertainment.html">Sports & Entertainment</a>
-                                  <a href="./pages/home&garden.html">Home & Garden</a>
+                                  <a href="./pages/technology.php">Technology</a>
+                                  <a href="./pages/apparel.php">Apparel</a>
+                                  <a href="./pages/sports&entertainment.php">Sports & Entertainment</a>
+                                  <a href="./pages/home&garden.php">Home & Garden</a>
                                 </div>
                               </div> 
-                              <li><a href="./pages/about-us.html">About us</a></li>
-                              <li><a href="./pages/contact-us.html">Contact us</a></li>
-                              <li><a href="./pages/login.html">Account</a></li>
-                              <li><a href="./pages/cart.html"><i class="fa fa-cart-plus"></i></a></li>
+                              <li><a href="./pages/about-us.php">About us</a></li>
+                              <li><a href="./pages/contact-us.php">Contact us</a></li>
+                              <li><a href="./pages/login.php">Account</a></li>
+                              <li><a href="./pages/cart.php"><i class="fa fa-cart-plus"></i></a></li>
                             </ul>
                         </nav>
                         <img src="menu.png" alt="menu" class="menu" onclick="toggleMenu()">
@@ -99,7 +99,7 @@
                         <img src="resources/technology/0.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;"><a href="./pages/product-desc.html">Laptop Apple MacBook Pro 13 , 13'', 16GB RAM, 256GB SSD</a></p>
+                        <p style="font-size: 15px;"><a href="./pages/product-desc.php">Laptop Apple MacBook Pro 13 , 13'', 16GB RAM, 256GB SSD</a></p>
                         <p><small>$1400.0</small><small class="small-text">$1700.0</small></p>
                     </div>
                 </div>

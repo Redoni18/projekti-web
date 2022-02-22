@@ -22,20 +22,20 @@
                     </div>
                     <nav>
                         <ul class="nav-list" id="menu-items">
-                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.php">Home</a></li>
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
                                 <div class="dropdown-content">
-                                  <a href="./technology.html">Technology</a>
-                                  <a href="./apparel.html">Apparel</a>
-                                  <a href="./sports&entertainment.html">Sports & Entertainment</a>
-                                  <a href="#">Home & Garden</a>
+                                  <a href="./technology.php">Technology</a>
+                                  <a href="#">Apparel</a>
+                                  <a href="./sports&entertainment.php">Sports & Entertainment</a>
+                                  <a href="./home&garden.php">Home & Garden</a>
                                 </div>
                               </div> 
-                            <li><a href="./about-us.html">About us</a></li>
-                            <li><a href="./contact-us.html">Contact us</a></li>
-                            <li><a href="./login.html">Account</a></li>
-                            <li><a href="./cart.html"><i class="fa fa-cart-plus"></i></a></li>
+                            <li><a href="./about-us.php">About us</a></li>
+                            <li><a href="./contact-us.php">Contact us</a></li>
+                            <li><a href="./login.php">Account</a></li>
+                            <li><a href="./cart.php"><i class="fa fa-cart-plus"></i></a></li>
                         </ul>
                     </nav>
                     <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">
@@ -46,15 +46,15 @@
             <div class="slideshow">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="../resources/slideshow/h&g slideshow/0.jpg" style="width:100%" id="img" class="slide-image">
+                    <img src="../resources/slideshow/a slideshow/0.jpg" style="width:100%" id="img" class="slide-image">
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="../resources/slideshow/h&g slideshow/1.jpg" style="width:100%" id="img" class="slide-image">
+                    <img src="../resources/slideshow/a slideshow/1.jpg" style="width:100%" id="img" class="slide-image">
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="../resources/slideshow/h&g slideshow/2.jpg" style="width:100%" id="img" class="slide-image">
+                    <img src="../resources/slideshow/a slideshow/2.jpg" style="width:100%" id="img" class="slide-image">
                 </div>
                 <br>
             </div>
@@ -69,146 +69,145 @@
             <div class="row">
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/0.jpg" alt="one product">
+                        <img src="../resources/apparel/0.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Landmann Tennessee Broiler</p>
-                        <p><small>$280.00</small><small class="small-text">$300.00</small></p>
+                        <p style="font-size: 15px;">Wrangler Authentics Men's Long Sleeve Quilted Lined Flannel Shirt Jacket with Hood</p>
+                        <p><small>$30.0</small><small class="small-text">$350.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/1.jpg" alt="one product">
+                        <img src="../resources/apparel/1.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Outback Jupiter 4 Burner Hybrid Gas BBQ - Stainless Steel</p>
-                        <p><small>$450.0</small></p>
+                        <p style="font-size: 15px;">NIKE DEFYALLDAY</p>
+                        <p><small>$45.0</small><small class="small-text">$60.0</small></p>
                     </div>
                 </div><div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/2.jpg" alt="one product">
+                        <img src="../resources/apparel/2.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Ooni Koda 12 Gas-Powered Portable Pizza Oven
-                        </p>
-                        <p><small>$250.00</small><small class="small-text">$280.0</small></p>
+                        <p style="font-size: 15px;">Duks për Meshkuj Nike NSW CLUB CRW BB</p>
+                        <p><small>$35.0</small><small class="small-text">$40.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/3.jpg" alt="one product">
+                        <img src="../resources/apparel/3.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Ooni Koda Portable Pizza Oven</p>
-                        <p><small>$200.00</small></p>
+                        <p style="font-size: 15px;">Bluze për femra Vero Moda 206673, Snow White, M</p>
+                        <p><small>$30.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/4.jpg" alt="one product">
+                        <img src="../resources/apparel/4.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Alexander Rose Roble 6 Seat Wooden Set</p>
-                        <p><small>$2000.00</small></p>
+                        <p style="font-size: 15px;">Trenerka të Poshtme për Fëmijë Nike NSW CLUB + HBR PANTV</p>
+                        <p><small>$30.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/5.jpg" alt="one product">
+                        <img src="../resources/apparel/5.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Alexander Rose Roble 6 Seat Charcoal Recliner Set</p>
-                        <p><small>$2400.00</small></p>
+                        <p style="font-size: 15px;">Jakne për Femra MCKINLEY</p>
+                        <p><small>$75.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/6.jpg" alt="one product">
+                        <img src="../resources/apparel/6.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Alexander Rose Monte Carlo 4 Seat Closed Weave Armchair Set</p>
-                        <p><small>$1700.00</small></p>
+                        <p style="font-size: 15px;">Trenerka Set për Femra Adidas 3S TR TS</p>
+                        <p><small>$65.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/7.jpg" alt="one product">
+                        <img src="../resources/apparel/7.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Gardena Classic Water Sprayer Set</p>
-                        <p><small>$25.00</small></p>
+                        <p style="font-size: 15px;">Maicë për Meshkuj Nike NSW TEE JUST DO IT SWOOSH</p>
+                        <p><small>$20.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/8.jpg" alt="one product">
+                        <img src="../resources/apparel/8.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Gardena EcoLine Water Sprayer</p>
-                        <p><small>$15.00</small></p>
+                        <p style="font-size: 15px;">Çizme për Meshkuj MCKINLEY</p>
+                        <p><small>$48.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/9.jpg" alt="one product">
+                        <img src="../resources/apparel/9.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Gardena Comfort FLEX Hose 15m</p>
-                        <p><small>$25.00</small></p>
+                        <p style="font-size: 15px;">Doreza MCKINLEY</p>
+                        <p><small>$19.99</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/10.jpg" alt="one product">
+                        <img src="../resources/apparel/10.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Gardena Ecoline Trowel</p>
-                        <p><small>$20.00</small></p>
+                        <p style="font-size: 15px;">Atlete për Femra Nike NIKE COURT ROYALE 2 NN</p>
+                        <p><small>$50.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/11.jpg" alt="one product">
+                        <img src="../resources/apparel/11.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">RHS Stainless Mid Handled Shrub Rake by Burgon and Ball</p>
-                        <p><small>$25.00</small></p>
+                        <p style="font-size: 15px;">Çizme për Fëmijë Nike FLEX ADVANCE BOOT BP</p>
+                        <p><small>$50.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/12.jpg" alt="one product">
+                        <img src="../resources/apparel/12.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Sophie Conran Trowel by Burgon and Ball</p>
-                        <p><small>$25.00</small></p>
+                        <p style="font-size: 15px;">Çanta Nike HERITAGE BKPK - FA21</p>
+                        <p><small>$31.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/13.jpg" alt="one product">
+                        <img src="../resources/apparel/13.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Muck Boot Womens Arctic Sport III Tall Black</p>
-                        <p><small>$120.00</small></p>
+                        <p style="font-size: 15px;">Kapelë Nike BEANIE</p>
+                        <p><small>$12.50</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/14.jpg" alt="one product">
+                        <img src="../resources/apparel/14.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Muck Boot Womens Arctic Sport II Tall Black</p>
-                        <p><small>$125.00</small></p>
+                        <p style="font-size: 15px;">Maicë për Femra Under Armour Live Sportstyle Graphic SSC</p>
+                        <p><small>$16.0</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/home&garden/15.jpg" alt="one product">
+                        <img src="../resources/apparel/15.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Muck Boot Womens Arctic Sport II Tall Navy Spruce</p>
-                        <p><small>$125.00</small></p>
+                        <p style="font-size: 15px;">Trenerka të Poshtme për Meshkuj Nike THRMA PANT TAPER</p>
+                        <p><small>$35.0</small></p>
                     </div>
                 </div>
             </div>
@@ -231,11 +230,11 @@
                     <div class="socials">
                         <ul class="social-list">
                             <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
-                            <a href="https://www.facebook.com/" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                            <a href="https://www.pinterest.com/" target="_blank"><li><i class="fa fa-pinterest"></i></li></a>
-                            <a href="https://www.twitter.com/" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
-                            <a href="https://www.linkedin.com/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                            <a href="https://www.reddit.com/" target="_blank"><li><i class="fa fa-reddit"></i></li></a>
+                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-pinterest"></i></li></a>
+                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-reddit"></i></li></a>
                         </ul>
                     </div>
                 </div>

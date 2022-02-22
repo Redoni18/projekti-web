@@ -21,21 +21,21 @@
                         <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
                     </div>
                     <nav>
-                        <ul class="nav-list" id="menu-items">
-                            <li><a href="../index.html">Home</a></li>
+                    <ul class="nav-list" id="menu-items">
+                            <li><a href="../index.php">Home</a></li>
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
                                 <div class="dropdown-content">
-                                  <a href="./technology.html">Technology</a>
-                                  <a href="./apparel.html">Apparel</a>
-                                  <a href="./sports&entertainment.html">Sports & Entertainment</a>
-                                  <a href="./home&garden.html">Home & Garden</a>
+                                  <a href="./technology.php">Technology</a>
+                                  <a href="./apparel.php">Apparel</a>
+                                  <a href="./sports&entertainment.php">Sports & Entertainment</a>
+                                  <a href="./home&garden.php">Home & Garden</a>
                                 </div>
                               </div> 
                             <li><a href="#">About us</a></li>
-                            <li><a href="./contact-us.html">Contact us</a></li>
-                            <li><a href="./login.html">Account</a></li>
-                            <li><a href="./cart.html"><i class="fa fa-cart-plus"></i></a></li>
+                            <li><a href="./contact-us.php">Contact us</a></li>
+                            <li><a href="./login.php">Account</a></li>
+                            <li><a href="./cart.php"><i class="fa fa-cart-plus"></i></a></li>
                         </ul>
                     </nav>
                     <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">

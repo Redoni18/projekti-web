@@ -10,8 +10,8 @@
         <script src="https://use.fontawesome.com/b106d7266c.js"></script>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/nav-style.css">
+        <link rel="stylesheet" href="../css/account.css">
         <link rel="stylesheet" href="../css/footer.css">
-        <link rel="stylesheet" href="../css/cart.css">
     </head>
     <body>
         <div class="differentPage">
@@ -22,70 +22,64 @@
                     </div>
                     <nav>
                         <ul class="nav-list" id="menu-items">
-                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.php">Home</a></li>
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
                                 <div class="dropdown-content">
-                                  <a href="./technology.html">Technology</a>
-                                  <a href="./apparel.html">Apparel</a>
-                                  <a href="./sports&entertainment.html">Sports & Entertainment</a>
-                                  <a href="./home&garden.html">Home & Garden</a>
+                                  <a href="./technology.php">Technology</a>
+                                  <a href="./apparel.php">Apparel</a>
+                                  <a href="./sports&entertainment.php">Sports & Entertainment</a>
+                                  <a href="./home&garden.php">Home & Garden</a>
                                 </div>
                               </div> 
-                            <li><a href="./about-us.html">About us</a></li>
-                            <li><a href="./contact-us.html">Contact us</a></li>
-                            <li><a href="./login.html">Account</a></li>
-                            <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                            <li><a href="./about-us.php">About us</a></li>
+                            <li><a href="./contact-us.php">Contact us</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="./cart.php"><i class="fa fa-cart-plus"></i></a></li>
                         </ul>
                     </nav>
                     <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">
                 </div>
             </div>
         </div>
-
-        <h2 class="my-cart">My Cart</h2>
-        <div class="cart">
-            <div class="cart-container">
-                <table>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>Product Price</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="product-info">
-                                <img src="../resources/technology/0.jpg">
-                                <div class="cart-product-description">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla id eos consequuntur molestiae quae, sint qui error officiis perferendis, cum quos. Soluta distinctio error quae officiis dignissimos libero aperiam corrupti.</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            $1400.00
-                            <div>
-                                <button class="butoni" style="background-color: aquamarine;">Purchase</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="product-info">
-                                <img src="../resources/sports&entertainment/10.jpg">
-                                <div class="cart-product-description">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla id eos consequuntur molestiae quae, sint qui error officiis perferendis, cum quos. Soluta distinctio error quae officiis dignissimos libero aperiam corrupti.</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            $15.00
-                            <div>
-                                <button class="butoni" style="background-color: aquamarine;">Purchase</button>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+        <div class="account-page">
+            <div class="login-form-element">
+                <p class="log-in" align="center">Sign up</p>
+                    <form class="login-form">
+                        <input id="email" class="firstInfo " type="text" align="center" placeholder="Email" required="true">
+                        <input id="password" class="password" type="password" align="center" placeholder="Password" required="true">
+                        <input type="submit" class="submit" align="center" value="Sign Up" id="submit">
+                        <div class="sign-up-message" style="margin-top: 25px;font-size: 13px;">
+                            <p align="center">Already have an account? <a href="./login.html" style="color: dodgerblue;">Log in</a></p>
+                        </div>
+                        
+                    </form>
+                </div>
         </div>
+
+        <!-- <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="login-column">
+                        <div class="login-form">
+                            <div class="page-message">
+                                <span><h2>Login</h2></span>
+                            </div>
+                            <form>
+                                <input type="text" placeholder="Username...">
+                                <input type="password" placeholder="Password...">
+                                <button type="submit" class="login-btn">Login</button>
+                                <br>
+                                <small>
+                                    Don't have an account?
+                                    <a href="./signup.html">Sign up</a>
+                                </small>    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
         <div class="footer">
             <div class="row">
@@ -114,6 +108,7 @@
                 </div>
             </div>
         </div>
-        <script src="../menuToggler.js"></script> 
+        <script src="../js/signup-validation.js"></script>
+        <script src="../menuToggler.js"></script>
     </body>
 </html>

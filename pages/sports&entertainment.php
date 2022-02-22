@@ -22,20 +22,20 @@
                     </div>
                     <nav>
                         <ul class="nav-list" id="menu-items">
-                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.php">Home</a></li>
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
                                 <div class="dropdown-content">
-                                  <a href="#">Technology</a>
-                                  <a href="./apparel.html">Apparel</a>
-                                  <a href="./sports&entertainment.html">Sports & Entertainment</a>
-                                  <a href="./home&garden.html">Home & Garden</a>
+                                  <a href="./technology.php">Technology</a>
+                                  <a href="./apparel.php">Apparel</a>
+                                  <a href="#">Sports & Entertainment</a>
+                                  <a href="./home&garden.php">Home & Garden</a>
                                 </div>
                               </div> 
-                            <li><a href="./about-us.html">About us</a></li>
-                            <li><a href="./contact-us.html">Contact us</a></li>
-                            <li><a href="./login.html">Account</a></li>
-                            <li><a href="./cart.html"><i class="fa fa-cart-plus"></i></a></li>
+                            <li><a href="./about-us.php">About us</a></li>
+                            <li><a href="./contact-us.php">Contact us</a></li>
+                            <li><a href="./login.php">Account</a></li>
+                            <li><a href="./cart.php"><i class="fa fa-cart-plus"></i></a></li>
                         </ul>
                     </nav>
                     <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">
@@ -46,15 +46,15 @@
             <div class="slideshow">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="../resources/slideshow/t slideshow/0.jpg" style="width:100%; " id="img" class="slide-image">
+                    <img src="../resources/slideshow/s&e slideshow/0.jpg" style="width:100%" id="img" class="slide-image">
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="../resources/slideshow/t slideshow/1.jpg" style="width:100%; " id="img" class="slide-image">
+                    <img src="../resources/slideshow/s&e slideshow/1.jpg" style="width:100%" id="img" class="slide-image">
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="../resources/slideshow/t slideshow/2.jpg" style="width:100%; " id="img" class="slide-image">
+                    <img src="../resources/slideshow/s&e slideshow/2.jpg" style="width:100%" id="img" class="slide-image">
                 </div>
                 <br>
             </div>
@@ -69,145 +69,145 @@
             <div class="row">
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/0.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/0.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Apple MacBook Pro 13 , 13'', 16GB RAM, 256GB SSD</p>
-                        <p><small>$1400.0</small><small class="small-text">$1700.0</small></p>
+                        <p style="font-size: 15px;">Under Armour UA HOVR APEX 3</p>
+                        <p><small>$125.99</small><small class="small-text">$145.99</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/1.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/1.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Lenovo Legion, 15.6'', 16GB RAM, 1TB SSD</p>
-                        <p><small>$200.0</small></p>
+                        <p style="font-size: 15px;">Nike Renew Retaliation TR 3</p>
+                        <p><small>$90.0</small></p>
                     </div>
                 </div><div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/2.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/2.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">TV Samsung UE58AU7172UXXH, 58"/146 cm, 3840 x 2160</p>
-                        <p><small>$550.0</small><small class="small-text">$779.0</small></p>
+                        <p style="font-size: 15px;">Nike Air Zoom Alphafly NEXT% Men's Racing Shoe</p>
+                        <p><small>$250.00</small><small class="small-text">$275.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/3.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/3.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Monitor Dell Alienware AW2521H 360Hz, 25" LED, Full HD</p>
-                        <p><small>$400.0</small></p>
+                        <p style="font-size: 15px;">Nike ZoomX Invincible Run Flyknit</p>
+                        <p><small>$180.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/4.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/4.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Samsung AU9000 65-inch Crystal UHD 4K Smart LED TV</p>
-                        <p><small>$950.0</small></p>
+                        <p style="font-size: 15px;">Champion Hold All</p>
+                        <p><small>$30.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/5.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/5.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Headphone Com Microfone Comfort Usb Leadership</p>
-                        <p><small>$65.0</small></p>
+                        <p style="font-size: 15px;">NIKE BIG MOUTH 2.0 22 OZ</p>
+                        <p><small>$10.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/6.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/6.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Lenovo Legion 5-15IMH05H, 15.6 ", Intel Core i5, 16GB RAM, 512GB SSD, NVIDIA GeForce GTX 1650 Ti, i zi</p>
-                        <p><small>$1000.0</small></p>
+                        <p style="font-size: 15px;">RING SPORT RX BUC cast flask 1 x 20kg</p>
+                        <p><small>$60.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/7.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/7.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Orë e mençur Wotchi WO51P - Pink</p>
-                        <p><small>$40.0</small></p>
+                        <p style="font-size: 15px;">Nike Elemental</p>
+                        <p><small>$25.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/8.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/8.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Kamerë GoPro HERO9, e zezë</p>
-                        <p><small>$550.0</small></p>
+                        <p style="font-size: 15px;">Nike Brasilia</p>
+                        <p><small>$50.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/9.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/9.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">HyperX - Cloud II Pro Wired Gaming Headset - Black/Gunmetal</p>
-                        <p><small>$100.0</small></p>
+                        <p style="font-size: 15px;">Nike Renew Retaliation TR 3</p>
+                        <p><small>$90.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/10.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/10.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Monitor Samsung T35F, 27" LED, Full HD, i hirtë</p>
-                        <p><small>$250.0</small></p>
+                        <p style="font-size: 15px;">Adidas Trail Bottle</p>
+                        <p><small>$15.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/11.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/11.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Celular Samsung Galaxy S21 5G, 6.2" FHD+, 8GB RAM, 128GB, vjollcë</p>
-                        <p><small>$1050.0</small></p>
+                        <p style="font-size: 15px;">Lonsdale Jump Rope</p>
+                        <p><small>$7.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/12.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/12.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Precision 15 (5560) Touch, 15.6", Intel Core i7, 16GB RAM, 512GB SSD, NVIDIA RTX A2000, i hirte</p>
-                        <p><small>$3100.0</small></p>
+                        <p style="font-size: 15px;">Lonsdale LNSD Fitness Weights</p>
+                        <p><small>$16.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/13.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/13.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Orë Garmin vivomove3 Sport, e zezë</p>
-                        <p><small>$250.0</small></p>
+                        <p style="font-size: 15px;">Nike Recovery Foam Roller</p>
+                        <p><small>$40.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/14.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/14.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Dell Alienware m15 Ryzen Editon R5, 15.6 ", AMD</p>
-                        <p><small>$2200.0</small></p>
+                        <p style="font-size: 15px;">RING SPORT RX 07 bench</p>
+                        <p><small>$60.00</small></p>
                     </div>
                 </div>
                 <div class="product-column">
                     <div class="product-img-container">
-                        <img src="../resources/technology/15.jpg" alt="one product">
+                        <img src="../resources/sports&entertainment/15.jpg" alt="one product">
                     </div>
                     <div class="product-text">
-                        <p style="font-size: 15px;">Kamerë D-Link DCS-8010LH</p>
-                        <p><small>$80.0</small></p>
+                        <p style="font-size: 15px;">RING SPORT RX 110</p>
+                        <p><small>$165.00</small></p>
                     </div>
                 </div>
             </div>
@@ -230,11 +230,11 @@
                     <div class="socials">
                         <ul class="social-list">
                             <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
-                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-pinterest"></i></li></a>
-                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
-                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-reddit"></i></li></a>
+                            <a href="https://www.facebook.com/" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="https://www.pinterest.com/" target="_blank"><li><i class="fa fa-pinterest"></i></li></a>
+                            <a href="https://www.twitter.com/" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                            <a href="https://www.reddit.com/" target="_blank"><li><i class="fa fa-reddit"></i></li></a>
                         </ul>
                     </div>
                 </div>

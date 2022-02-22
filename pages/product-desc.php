@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,7 +13,8 @@
         <script src="https://use.fontawesome.com/b106d7266c.js"></script>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/nav-style.css">
-        <link rel="stylesheet" href="../css/account.css">
+        <link rel="stylesheet" href="../css/slideshow.css">
+        <link rel="stylesheet" href="../css/product-desc.css">
         <link rel="stylesheet" href="../css/footer.css">
     </head>
     <body>
@@ -21,65 +25,54 @@
                         <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
                     </div>
                     <nav>
-                        <ul class="nav-list" id="menu-items">
-                            <li><a href="../index.html">Home</a></li>
+                    <ul class="nav-list" id="menu-items">
+                            <li><a href="../index.php">Home</a></li>
                             <div class="dropdown">
                                 <li class="dropbtn">Products</li>
                                 <div class="dropdown-content">
-                                  <a href="./technology.html">Technology</a>
-                                  <a href="./apparel.html">Apparel</a>
-                                  <a href="./sports&entertainment.html">Sports & Entertainment</a>
-                                  <a href="./home&garden.html">Home & Garden</a>
+                                  <a href="./technology.php">Technology</a>
+                                  <a href="./apparel.php">Apparel</a>
+                                  <a href="./sports&entertainment.php">Sports & Entertainment</a>
+                                  <a href="./home&garden.php">Home & Garden</a>
                                 </div>
                               </div> 
-                            <li><a href="./about-us.html">About us</a></li>
-                            <li><a href="./contact-us.html">Contact us</a></li>
-                            <li><a href="#">Account</a></li>
-                            <li><a href="./cart.html"><i class="fa fa-cart-plus"></i></a></li>
+                            <li><a href="./about-us.php">About us</a></li>
+                            <li><a href="./contact-us.php">Contact us</a></li>
+                            <li><a href="./login.php">Account</a></li>
+                            <li><a href="./cart.php"><i class="fa fa-cart-plus"></i></a></li>
                         </ul>
                     </nav>
                     <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">
                 </div>
             </div>
         </div>
-        <div class="account-page">
-            <div class="login-form-element">
-                <p class="log-in" align="center">Sign up</p>
-                    <form class="login-form">
-                        <input id="email" class="firstInfo " type="text" align="center" placeholder="Email" required="true">
-                        <input id="password" class="password" type="password" align="center" placeholder="Password" required="true">
-                        <input type="submit" class="submit" align="center" value="Sign Up" id="submit">
-                        <div class="sign-up-message" style="margin-top: 25px;font-size: 13px;">
-                            <p align="center">Already have an account? <a href="./login.html" style="color: dodgerblue;">Log in</a></p>
-                        </div>
-                        
-                    </form>
+        
+        <div class="product-desc">
+            <div class="product">
+                <div class="product-img">
+                    <img src="../resources/technology/0.jpg" alt="">
                 </div>
-        </div>
-
-        <!-- <div class="account-page">
-            <div class="container">
-                <div class="row">
-                    <div class="login-column">
-                        <div class="login-form">
-                            <div class="page-message">
-                                <span><h2>Login</h2></span>
-                            </div>
-                            <form>
-                                <input type="text" placeholder="Username...">
-                                <input type="password" placeholder="Password...">
-                                <button type="submit" class="login-btn">Login</button>
-                                <br>
-                                <small>
-                                    Don't have an account?
-                                    <a href="./signup.html">Sign up</a>
-                                </small>    
-                            </form>
-                        </div>
+                <div class="product-details">
+                    <h4>Apple MacBook Pro 13</h4>
+                    <p>Description:</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p>In sctock / Out of stock</p>
+                    <p>Price: $1400.0</p>
+                    <p>Payment methods:</p>
+                    <div class="payment-methods" style="margin: 5px 0;">
+                        <i class="fa fa-paypal"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-cc-visa"></i>
+                        <i class="fa fa-google-wallet"></i>
+                        <i class="fa fa-money"></i>
                     </div>
                 </div>
             </div>
-        </div> -->
+            <div class="butonat">
+                <button class="butoni" style="background-color: aquamarine;">Purchase</button>
+                <button class="butoni" style="background-color: lightblue;">Add to cart</button>
+            </div>
+        </div>
 
         <div class="footer">
             <div class="row">
@@ -108,7 +101,6 @@
                 </div>
             </div>
         </div>
-        <script src="../js/signup-validation.js"></script>
         <script src="../menuToggler.js"></script>
     </body>
 </html>
