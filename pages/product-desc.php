@@ -1,8 +1,16 @@
+<?php 
+    require_once '../controllers/DashboardController.php';
+
+    $currentProduct = new DashboardController;
+    if(isset($_GET['id'])){
+        $productId = $_GET['id'];
+    }
+
+    $productDetail = $currentProduct->editData($productId);
+
+?>
+
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -50,14 +58,19 @@
         <div class="product-desc">
             <div class="product">
                 <div class="product-img">
-                    <img src="../resources/technology/0.jpg" alt="">
+                    <img src="../<?php echo $productDetail['product_image'] ?>" alt="">
                 </div>
                 <div class="product-details">
-                    <h4>Apple MacBook Pro 13</h4>
+                    <h4><?php echo $productDetail['product_name'] ?></h4>
                     <p>Description:</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <p>In sctock / Out of stock</p>
-                    <p>Price: $1400.0</p>
+                    <p><?php echo $productDetail['product_description'] ?></p>
+                    <?php if($productDetail['product_quantity'] != 0){
+                        echo '<p>'.$productDetail['product_quantity'] .' in stock</p>';
+                    } else {
+                        echo '<p>Out of stock</p>';
+                    }
+                    ?>
+                    <p>Price: $<?php echo $productDetail['product_price'] ?>.00</p>
                     <p>Payment methods:</p>
                     <div class="payment-methods" style="margin: 5px 0;">
                         <i class="fa fa-paypal"></i>

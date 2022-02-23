@@ -81,8 +81,8 @@
                             <img src="../'. $hgProduct['product_image'] .'" alt="one product">
                         </div>
                         <div class="product-text">
-                            <p style="font-size: 15px;">'. $hgProduct['product_name'] .'</p>
-                            <p><small>$="'. $hgProduct['product_price'] .'.00</small></p>
+                            <p style="font-size: 15px;"><a href="./product-desc.php?id='.$hgProduct['Id'].'">'. $hgProduct['product_name'] .'</a></p>
+                            <p><small>$'. $hgProduct['product_price'] .'.00</small></p>
                         </div>
                     </div>
                         ';

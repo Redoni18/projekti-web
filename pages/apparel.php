@@ -81,7 +81,7 @@
                                 <img src="../'. $apparelProduct['product_image'] .'" alt="one product">
                             </div>
                             <div class="product-text">
-                                <p style="font-size: 15px;">'. $apparelProduct['product_name'] .'</p>
+                                <p style="font-size: 15px;"><a href="./product-desc.php?id='.$apparelProduct['Id'].'">'. $apparelProduct['product_name'] .'</a></p>
                                 <p><small>$'. $apparelProduct['product_price'] .'.00</small></p>
                             </div>
                         </div>

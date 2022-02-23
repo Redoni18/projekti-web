@@ -83,8 +83,8 @@
                                 <img src="../'. $SEProduct['product_image'] .'" alt="one product">
                             </div>
                             <div class="product-text">
-                                <p style="font-size: 15px;">U
-                                '. $SEProduct['product_name'] .'</p>
+                                <p style="font-size: 15px;"><a href="./product-desc.php?id='.$SEProduct['Id'].'">
+                                '. $SEProduct['product_name'] .'</a></p>
                                 <p><small>$'. $SEProduct['product_price'] .'.00</small></p>
                             </div>
                         </div>

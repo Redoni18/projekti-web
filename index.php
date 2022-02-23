@@ -104,7 +104,7 @@
                             <img src="' .$product['product_image'] .'" alt="one product">
                         </div>
                         <div class="product-text">
-                            <p style="font-size: 15px;"><a href="./pages/product-desc.php">' .$product['product_name'] .'</a></p>
+                            <p style="font-size: 15px;"><a href="./pages/product-desc.php?id='.$product['Id'].'">' .$product['product_name'] .'</a></p>
                             <p><small>$' .$product['product_price'] .'.00</small></p>
                         </div>
                     </div>';
