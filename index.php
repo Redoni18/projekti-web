@@ -1,8 +1,9 @@
+<?php 
+    session_start();
+    require_once './controllers/DashboardController.php';
+?>
+
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -94,46 +95,26 @@
         <div class="products-container">
             <h2>Some of our products</h2>
             <div class="row">
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="resources/technology/0.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;"><a href="./pages/product-desc.php">Laptop Apple MacBook Pro 13 , 13'', 16GB RAM, 256GB SSD</a></p>
-                        <p><small>$1400.0</small><small class="small-text">$1700.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="resources/technology/1.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Lenovo Legion, 15.6'', 16GB RAM, 1TB SSD</p>
-                        <p><small>$200.0</small></p>
-                    </div>
-                </div><div class="product-column">
-                    <div class="product-img-container">
-                        <img src="resources/apparel/0.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">TV Samsung UE58AU7172UXXH, 58"/146 cm, 3840 x 2160</p>
-                        <p><small>$550.0</small><small class="small-text">$779.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="resources/technology/3.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Monitor Dell Alienware AW2521H 360Hz, 25" LED, Full HD</p>
-                        <p><small>$400.0</small></p>
-                    </div>
-                </div>
+            <?php 
+                $products = new DashboardController;
+                $allProducts = $products->readData();
+                foreach($allProducts as $product){
+                    echo '<div class="product-column">
+                        <div class="product-img-container">
+                            <img src="' .$product['product_image'] .'" alt="one product">
+                        </div>
+                        <div class="product-text">
+                            <p style="font-size: 15px;"><a href="./pages/product-desc.php">' .$product['product_name'] .'</a></p>
+                            <p><small>$' .$product['product_price'] .'.00</small></p>
+                        </div>
+                    </div>';
+                }
+            ?>
             </div>
         </div>
 
         <div class="footer">
-            <div class="row">
+            <div class="footer-row">
                 <div class="footer-column">
                     <p>&copy; Copyright by: Redon Emini &amp; Vullnet Kabashi</p>
                 </div>

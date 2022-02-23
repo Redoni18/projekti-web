@@ -119,6 +119,10 @@ small {
     max-width: 250px;
     margin-bottom: 30px;
   }
+
+  .product-category img {
+    width: 200px;
+  }
 }
 
 .product-column {
@@ -157,4 +161,10 @@ small {
   bottom: 0;
   left: 1;
   text-align: left;
+}
+.product-text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }

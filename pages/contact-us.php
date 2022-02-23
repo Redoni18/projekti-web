@@ -1,3 +1,15 @@
+<?php 
+    require_once '../controllers/DashboardController.php';
+
+    $messages = new DashboardController;
+
+    if(isset($_POST['submit'])){
+        $messages->sendMessage($_POST);
+    }
+
+?>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -43,18 +55,17 @@
             </div>
         </div>
         <div class="contact-us-container">
-            <form style="display: block;">
+            <form style="display: block;" method="POST">
                 <div class="name-email-input">
-                    <input class="InputN" id="emri" type="text" placeholder="Your name">
-                    <input class="InputE" id="email" type="text" placeholder="Your email">
+                    <input class="InputN" id="emri" type="text" placeholder="Your name" name="name">
+                    <input class="InputE" id="email" type="text" placeholder="Your email" name="email">
                 </div>
                 <div class="message-input">
-                    <textarea class="InputM" id="mesazhi" type="text" placeholder="Your message" style="resize: none;"></textarea>
+                    <textarea class="InputM" id="mesazhi" type="text" placeholder="Your message" style="resize: none;" name="message"></textarea>
                 </div>
                 <br>
-                <button class="formButton"  type="button" onclick="validoMesazhin()">Send Message</button>
+                <input class="formButton" type="submit" onclick="validoMesazhin(e)" name="submit" value="Send Message"></input>
             </form>
-            <script src="../js/contact-us-validation.js"></script>
         </div>
         <div class="footer">
             <div class="row">
@@ -84,5 +95,6 @@
             </div>
         </div>
         <script src="../menuToggler.js"></script>
+        <script src="../js/contact-us-validation.js"></script>
     </body>
 </html>

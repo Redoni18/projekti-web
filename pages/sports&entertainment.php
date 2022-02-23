@@ -1,3 +1,8 @@
+<?php 
+    require_once '../controllers/DashboardController.php';
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -67,149 +72,25 @@
 
         <div class="products-container">
             <div class="row">
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/0.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Under Armour UA HOVR APEX 3</p>
-                        <p><small>$125.99</small><small class="small-text">$145.99</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/1.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Nike Renew Retaliation TR 3</p>
-                        <p><small>$90.0</small></p>
-                    </div>
-                </div><div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/2.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Nike Air Zoom Alphafly NEXT% Men's Racing Shoe</p>
-                        <p><small>$250.00</small><small class="small-text">$275.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/3.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Nike ZoomX Invincible Run Flyknit</p>
-                        <p><small>$180.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/4.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Champion Hold All</p>
-                        <p><small>$30.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/5.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">NIKE BIG MOUTH 2.0 22 OZ</p>
-                        <p><small>$10.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/6.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">RING SPORT RX BUC cast flask 1 x 20kg</p>
-                        <p><small>$60.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/7.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Nike Elemental</p>
-                        <p><small>$25.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/8.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Nike Brasilia</p>
-                        <p><small>$50.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/9.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Nike Renew Retaliation TR 3</p>
-                        <p><small>$90.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/10.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Adidas Trail Bottle</p>
-                        <p><small>$15.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/11.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Lonsdale Jump Rope</p>
-                        <p><small>$7.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/12.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Lonsdale LNSD Fitness Weights</p>
-                        <p><small>$16.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/13.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Nike Recovery Foam Roller</p>
-                        <p><small>$40.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/14.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">RING SPORT RX 07 bench</p>
-                        <p><small>$60.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/sports&entertainment/15.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">RING SPORT RX 110</p>
-                        <p><small>$165.00</small></p>
-                    </div>
-                </div>
+                <?php 
+                    $sportEntertainment = new DashboardController;
+                    $allSEProducts = $sportEntertainment->readSEProducts();
+
+                    foreach($allSEProducts as $SEProduct){
+                        echo '
+                            <div class="product-column">
+                            <div class="product-img-container">
+                                <img src="../'. $SEProduct['product_image'] .'" alt="one product">
+                            </div>
+                            <div class="product-text">
+                                <p style="font-size: 15px;">U
+                                '. $SEProduct['product_name'] .'</p>
+                                <p><small>$'. $SEProduct['product_price'] .'.00</small></p>
+                            </div>
+                        </div>
+                        ';
+                    }
+                ?>
             </div>
         </div>
 

@@ -50,7 +50,7 @@
                         <input id="password" class="password" type="password" align="center" placeholder="Password">
                         <input type="submit" class="submit" align="center" value="Sign In" id="submit">
                         <div class="sign-up-message" style="margin-top: 25px;font-size: 13px;">
-                            <p align="center">Don't have an account? <a href="./signup.html" style="color: dodgerblue;">Sign up</a></p>
+                            <p align="center">Don't have an account? <a href="./signup.php" style="color: dodgerblue;">Sign up</a></p>
                         </div>
                         
                     </form>

@@ -1,3 +1,7 @@
+<?php 
+    require_once '../controllers/DashboardController.php';
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -67,149 +71,23 @@
 
         <div class="products-container">
             <div class="row">
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/0.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Wrangler Authentics Men's Long Sleeve Quilted Lined Flannel Shirt Jacket with Hood</p>
-                        <p><small>$30.0</small><small class="small-text">$350.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/1.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">NIKE DEFYALLDAY</p>
-                        <p><small>$45.0</small><small class="small-text">$60.0</small></p>
-                    </div>
-                </div><div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/2.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Duks për Meshkuj Nike NSW CLUB CRW BB</p>
-                        <p><small>$35.0</small><small class="small-text">$40.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/3.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Bluze për femra Vero Moda 206673, Snow White, M</p>
-                        <p><small>$30.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/4.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Trenerka të Poshtme për Fëmijë Nike NSW CLUB + HBR PANTV</p>
-                        <p><small>$30.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/5.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Jakne për Femra MCKINLEY</p>
-                        <p><small>$75.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/6.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Trenerka Set për Femra Adidas 3S TR TS</p>
-                        <p><small>$65.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/7.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Maicë për Meshkuj Nike NSW TEE JUST DO IT SWOOSH</p>
-                        <p><small>$20.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/8.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Çizme për Meshkuj MCKINLEY</p>
-                        <p><small>$48.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/9.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Doreza MCKINLEY</p>
-                        <p><small>$19.99</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/10.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Atlete për Femra Nike NIKE COURT ROYALE 2 NN</p>
-                        <p><small>$50.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/11.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Çizme për Fëmijë Nike FLEX ADVANCE BOOT BP</p>
-                        <p><small>$50.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/12.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Çanta Nike HERITAGE BKPK - FA21</p>
-                        <p><small>$31.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/13.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Kapelë Nike BEANIE</p>
-                        <p><small>$12.50</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/14.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Maicë për Femra Under Armour Live Sportstyle Graphic SSC</p>
-                        <p><small>$16.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/apparel/15.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Trenerka të Poshtme për Meshkuj Nike THRMA PANT TAPER</p>
-                        <p><small>$35.0</small></p>
-                    </div>
-                </div>
+                <?php 
+                    $apparelProducts = new DashboardController;
+                    $allApparelProducts = $apparelProducts->readApparelProducts();
+                    foreach($allApparelProducts as $apparelProduct){
+                        echo '
+                            <div class="product-column">
+                            <div class="product-img-container">
+                                <img src="../'. $apparelProduct['product_image'] .'" alt="one product">
+                            </div>
+                            <div class="product-text">
+                                <p style="font-size: 15px;">'. $apparelProduct['product_name'] .'</p>
+                                <p><small>$'. $apparelProduct['product_price'] .'.00</small></p>
+                            </div>
+                        </div>
+                        ';
+                    }
+                ?>
             </div>
         </div>
 

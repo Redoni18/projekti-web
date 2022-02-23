@@ -1,3 +1,7 @@
+<?php 
+    require_once '../controllers/DashboardController.php';
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -67,150 +71,23 @@
 
         <div class="products-container">
             <div class="row">
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/0.jpg" alt="one product">
+                <?php 
+                    $hgProducts = new DashboardController;
+                    $allHGProducts = $hgProducts->readHGProducts();
+                    foreach($allHGProducts as $hgProduct){
+                        echo '
+                        <div class="product-column">
+                        <div class="product-img-container">
+                            <img src="../'. $hgProduct['product_image'] .'" alt="one product">
+                        </div>
+                        <div class="product-text">
+                            <p style="font-size: 15px;">'. $hgProduct['product_name'] .'</p>
+                            <p><small>$="'. $hgProduct['product_price'] .'.00</small></p>
+                        </div>
                     </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Landmann Tennessee Broiler</p>
-                        <p><small>$280.00</small><small class="small-text">$300.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/1.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Outback Jupiter 4 Burner Hybrid Gas BBQ - Stainless Steel</p>
-                        <p><small>$450.0</small></p>
-                    </div>
-                </div><div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/2.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Ooni Koda 12 Gas-Powered Portable Pizza Oven
-                        </p>
-                        <p><small>$250.00</small><small class="small-text">$280.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/3.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Ooni Koda Portable Pizza Oven</p>
-                        <p><small>$200.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/4.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Alexander Rose Roble 6 Seat Wooden Set</p>
-                        <p><small>$2000.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/5.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Alexander Rose Roble 6 Seat Charcoal Recliner Set</p>
-                        <p><small>$2400.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/6.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Alexander Rose Monte Carlo 4 Seat Closed Weave Armchair Set</p>
-                        <p><small>$1700.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/7.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Gardena Classic Water Sprayer Set</p>
-                        <p><small>$25.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/8.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Gardena EcoLine Water Sprayer</p>
-                        <p><small>$15.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/9.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Gardena Comfort FLEX Hose 15m</p>
-                        <p><small>$25.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/10.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Gardena Ecoline Trowel</p>
-                        <p><small>$20.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/11.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">RHS Stainless Mid Handled Shrub Rake by Burgon and Ball</p>
-                        <p><small>$25.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/12.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Sophie Conran Trowel by Burgon and Ball</p>
-                        <p><small>$25.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/13.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Muck Boot Womens Arctic Sport III Tall Black</p>
-                        <p><small>$120.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/14.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Muck Boot Womens Arctic Sport II Tall Black</p>
-                        <p><small>$125.00</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/home&garden/15.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Muck Boot Womens Arctic Sport II Tall Navy Spruce</p>
-                        <p><small>$125.00</small></p>
-                    </div>
-                </div>
+                        ';
+                    }
+                ?>
             </div>
         </div>
 

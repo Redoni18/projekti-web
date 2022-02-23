@@ -12,7 +12,10 @@
   color: white;
 }
 
-.footer .row {
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: auto;
 }
 
@@ -44,7 +47,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .footer .row {
+  .footer .footer-row {
     display: flex;
     flex-direction: column;
   }
@@ -55,7 +58,7 @@
     width: 150px;
   }
 
-  .footer .row {
+  .footer .footer-row {
     display: flex;
     flex-direction: column;
     margin: auto;

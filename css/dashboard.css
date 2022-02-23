@@ -39,11 +39,6 @@ td {
   margin: auto;
 }
 
-td img {
-  width: 100px;
-  margin: auto;
-}
-
 .butoni {
   text-align: center;
   color: #141414;
@@ -55,4 +50,47 @@ td img {
   margin: 10px;
   border-radius: 20px;
   border: 1px solid gray;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background: #3474e6;
+  color: white;
+  height: 60px;
+}
+
+.logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
 }

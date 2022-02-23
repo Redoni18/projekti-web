@@ -1,4 +1,4 @@
-function validoMesazhin(){
+function validoMesazhin(e){
     if(document.getElementById('emri').value == null || document.getElementById('emri').value === ''){
         alert('Duhet të plotësoni emrin!');
         return;
@@ -15,10 +15,7 @@ function validoMesazhin(){
         return;
     }
     else {
-        alert('Mesazhi është dërguar!')
-        document.getElementById('emri').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('mesazhi').value = '';
+        e.preventDefault()
     }
 }
 function validoRegexE(){

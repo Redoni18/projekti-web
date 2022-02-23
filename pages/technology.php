@@ -1,3 +1,7 @@
+<?php
+    require_once '../controllers/DashboardController.php';
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -67,149 +71,23 @@
 
         <div class="products-container">
             <div class="row">
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/0.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Apple MacBook Pro 13 , 13'', 16GB RAM, 256GB SSD</p>
-                        <p><small>$1400.0</small><small class="small-text">$1700.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/1.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Lenovo Legion, 15.6'', 16GB RAM, 1TB SSD</p>
-                        <p><small>$200.0</small></p>
-                    </div>
-                </div><div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/2.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">TV Samsung UE58AU7172UXXH, 58"/146 cm, 3840 x 2160</p>
-                        <p><small>$550.0</small><small class="small-text">$779.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/3.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Monitor Dell Alienware AW2521H 360Hz, 25" LED, Full HD</p>
-                        <p><small>$400.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/4.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Samsung AU9000 65-inch Crystal UHD 4K Smart LED TV</p>
-                        <p><small>$950.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/5.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Headphone Com Microfone Comfort Usb Leadership</p>
-                        <p><small>$65.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/6.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Lenovo Legion 5-15IMH05H, 15.6 ", Intel Core i5, 16GB RAM, 512GB SSD, NVIDIA GeForce GTX 1650 Ti, i zi</p>
-                        <p><small>$1000.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/7.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Orë e mençur Wotchi WO51P - Pink</p>
-                        <p><small>$40.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/8.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Kamerë GoPro HERO9, e zezë</p>
-                        <p><small>$550.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/9.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">HyperX - Cloud II Pro Wired Gaming Headset - Black/Gunmetal</p>
-                        <p><small>$100.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/10.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Monitor Samsung T35F, 27" LED, Full HD, i hirtë</p>
-                        <p><small>$250.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/11.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Celular Samsung Galaxy S21 5G, 6.2" FHD+, 8GB RAM, 128GB, vjollcë</p>
-                        <p><small>$1050.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/12.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Precision 15 (5560) Touch, 15.6", Intel Core i7, 16GB RAM, 512GB SSD, NVIDIA RTX A2000, i hirte</p>
-                        <p><small>$3100.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/13.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Orë Garmin vivomove3 Sport, e zezë</p>
-                        <p><small>$250.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/14.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Laptop Dell Alienware m15 Ryzen Editon R5, 15.6 ", AMD</p>
-                        <p><small>$2200.0</small></p>
-                    </div>
-                </div>
-                <div class="product-column">
-                    <div class="product-img-container">
-                        <img src="../resources/technology/15.jpg" alt="one product">
-                    </div>
-                    <div class="product-text">
-                        <p style="font-size: 15px;">Kamerë D-Link DCS-8010LH</p>
-                        <p><small>$80.0</small></p>
-                    </div>
-                </div>
+                <?php 
+                    $techProducts = new DashboardController;
+                    $allTechProducts = $techProducts->readTechProducts();
+                    foreach($allTechProducts as $techProduct){
+                        echo '
+                        <div class="product-column">
+                            <div class="product-img-container">
+                                <img src="../' .$techProduct['product_image'] .'">
+                            </div>
+                            <div class="product-text">
+                                <p style="font-size: 15px;">' .$techProduct['product_name'] .'</p>
+                                <p><small>$'. $techProduct['product_price'] .'.00</small></p>
+                            </div>
+                        </div>
+                        ';
+                    }
+                ?>
             </div>
         </div>
 

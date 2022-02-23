@@ -2,23 +2,28 @@
     require_once '../controllers/DashboardController.php';
 
     $products = new DashboardController;
+    if(isset($_GET['id'])){
+        $productId = $_GET['id'];
+    }
+
+    $currentProduct = $products->editData($productId);
 
     if(isset($_POST['submit'])){
-        $products->insertData($_POST);
+        $products->updateData($_POST, $productId);
     }
-?>
 
+?>
 
 <div>
     <form method="POST">
         Image:
-        <input type="file" name="image">
+        <input type="file" name="image" value="<?php echo $currentProduct['product_image']?>">
         <br>
         Product name:
-        <input type="text" name="name">
+        <input type="text" name="name" value="<?php echo $currentProduct['product_name']?>">
         <br>
         Product description:
-        <textarea name="description" cols="30" rows="10"></textarea>
+        <textarea name="description" cols="30" rows="10"><?php echo $currentProduct['product_description'] ?></textarea>
         <br>
         Product category:
         <select name="category" id="category">
@@ -30,11 +35,11 @@
         </select>
         <br>
         Quantity:
-        <input type="number" name="quantity">
+        <input type="number" name="quantity" value="<?php echo $currentProduct['product_quantity']?>">
         <br>
         Price:
-        <input type="number" name="price">
+        <input type="number" name="price" value="<?php echo $currentProduct['product_price']?>">
         <br>
-        <input type="submit" name="submit" value="Save">
+        <input type="submit" name="submit" value="Update">
     </form>
 </div>
