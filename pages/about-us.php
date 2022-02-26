@@ -1,5 +1,5 @@
 <?php
-require_once '../controllers/AUDashboardController.php';
+require_once '../controllers/DashboardController.php';
 ?>
 <!DOCTYPE html>
 
@@ -68,20 +68,26 @@ require_once '../controllers/AUDashboardController.php';
             </div>
             <div class="about-us-slider">
                 <?php
-                    $stafi = new AUDashboardController;
-                    $allStaf = $stafi->readData();
-                    for($i=0;$i<count($allStaf);$i++){
+                    $stafi = new DashboardController;
+                    $allStaf = $stafi->readStaf();
+                    if(!count($allStaf)){
                         echo '
-
-                        
-                            <div class="slider-content">
-                            <img src=" '.$allStaf[$i]['staff_image'] .'">
-                            <div class="team-description">
-                                <h2>'.$allStaf[$i]['staff_name'].'</h2>
-                                <h3>'.$allStaf[$i]['staff_position'].'</h3>
-                            </div>
-                            </div>                     
+                            <p>Staff is missing in database
                         ';
+                    }else{
+                        for($i=0;$i<count($allStaf);$i++){
+                            echo '
+    
+                            
+                                <div class="slider-content">
+                                <img src=" '.$allStaf[$i]['staff_image'] .'">
+                                <div class="team-description">
+                                    <h2>'.$allStaf[$i]['staff_name'].'</h2>
+                                    <h3>'.$allStaf[$i]['staff_position'].'</h3>
+                                </div>
+                                </div>                     
+                            ';
+                        }
                     }
                 ?>    
                 

@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
     <input type="text" name="username" value="<?php echo $currentUser['username'];?>">
     <br>
     Role:
-    <input type="number" name="role" value="<?php echo $currentUser['user_role'];?>">
+    <input type="number" name="user_role" value="<?php echo $currentUser['user_role'];?>">
     <br>
     <input type="submit" name="submit" value="Update">
 </form>
