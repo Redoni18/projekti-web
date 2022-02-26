@@ -24,7 +24,8 @@
             </div>
             <ul class="nav">
             <li><a href="./productDashboard.php">Products</a></li>
-            <li><a href="#">Users</a></li>
+            <li><a href="./stafiDashboard.php">Stafi</a></li>
+            <li><a href="./userDashboard.php">Users</a></li>
             <li><a href="./messagesDashboard.php">Messages</a></li>
             </ul>
         </div>

@@ -1,4 +1,5 @@
 <?php
+    require_once '../views/user.php';
     require_once '../config/Database.php';
 
     class DashboardController{
@@ -133,6 +134,110 @@
             $query->bindParam(':id', $id);
             $query->execute();
             return header('Location: messagesDashboard.php');
+        }
+
+        //Stafi 
+
+        public function readStaf(){
+            $query = $this->db->pdo->query('SELECT * from stafi');
+    
+            return $query->fetchAll();
+        }
+        public function insertStaf($request){
+            $request['image'] = '../resources/about-us/our team/' . $request['image'];
+            $query = $this->db->pdo->prepare('INSERT INTO stafi (staff_image,staff_name,staff_position)
+            VALUES (:staff_image,:staff_name, :staff_position)');
+    
+            $query->bindParam(':staff_image',$request['image']);
+            $query->bindParam(':staff_name',$request['name']);
+            $query->bindParam(':staff_position',$request['position']);
+            $query->execute();
+    
+            return header('Location: stafiDashboard.php');
+        }
+        public function editStaf($id){
+            $query = $this->db->pdo->prepare('SELECT * from stafi WHERE id = :id');
+    
+            $query->bindParam(':id', $id);
+    
+            $query->execute();
+            return $query->fetch();
+        }
+        public function updateStaf($request,$id){
+            $query=$this->db->pdo->prepare('UPDATE stafi SET staff_image = :staff_image, staff_name = :staff_name,
+             staff_position = :staff_position WHERE id= :id');
+            $query->bindParam(':staff_image',$request['image']); 
+            $query->bindParam(':staff_name',$request['name']); 
+            $query->bindParam(':staff_position',$request['position']);
+            $query->bindParam(':id',$id);
+            
+            $query->execute();
+    
+            return header('Location: stafiDashboard.php');
+        }
+        public function deleteStaf($id){
+            $query = $this->db->pdo->prepare('DELETE from stafi WHERE id=:id');
+            $query->bindParam(':id',$id);
+            $query->execute();
+    
+            return header('Location: stafiDashboard.php');
+        }
+
+        //User
+
+        public function readUser(){
+            $query = $this->db->pdo->query("SELECT * from user");
+
+            return $query->fetchAll();
+        }
+
+        public function insertUser(\User $request){
+        
+        // $user = new User;
+        $email=$request->getEmail();
+        $username = $request->getUsername();
+        $password=password_hash($request->getPassword(), PASSWORD_BCRYPT);
+        $role=$request->getRole();
+
+        $query = $this->db->pdo->prepare('INSERT INTO user (email,username,user_password,user_role)
+        VALUES (:email,:username, :user_password, :user_role)');
+
+        $query->bindParam(':email',$email);
+        $query->bindParam(':username',$username);
+        $query->bindParam(':user_password',$password);
+        $query->bindParam(':user_role',$role);
+        $query->execute();
+
+        return header('Location: login.php');
+        }
+
+        public function editUser($id){
+            $query = $this->db->pdo->prepare('SELECT * from user WHERE id = :id');
+    
+            $query->bindParam(':id', $id);
+    
+            $query->execute();
+            return $query->fetch();
+        }
+        public function updateUser($request,$id){
+            $query=$this->db->pdo->prepare('UPDATE user SET email = :user_email, username = :username,
+             user_role = :user_role WHERE id= :id');
+            $query->bindParam(':user_email',$request['email']); 
+            $query->bindParam(':username',$request['username']); 
+            $query->bindParam(':user_role',$request['user_role']);
+            $query->bindParam(':id',$id);
+            
+            $query->execute();
+    
+            return header('Location: userDashboard.php');
+        }
+
+        public function deleteUser($id){
+            $query = $this->db->pdo->prepare('DELETE from user WHERE id=:id');
+            $query->bindParam(':id',$id);
+            $query->execute();
+    
+            return header('Location: userDashboard.php');
         }
     }
 ?>

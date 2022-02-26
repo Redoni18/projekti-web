@@ -1,3 +1,6 @@
+<?php
+require_once '../controllers/AUDashboardController.php';
+?>
 <!DOCTYPE html>
 
 <html>
@@ -64,36 +67,25 @@
                 <h2>Our team</h2>
             </div>
             <div class="about-us-slider">
-                <div class="slider-content">
-                    <img src="../resources/about-us/our team/0.jpg" alt="">
-                    <div class="team-description">
-                        <h2>Anne Hathaway</h2>
-                        <h3>CEO</h3>
-                    </div>
-                </div>
-                <div class="slider-content">
-                    <img src="../resources/about-us/our team/1.jpg" alt="">
-                    <div class="team-description">
-                        <h2>Megan Fox</h2>
-                        <h3>COO</h3>
-                    </div>
-                </div>
-                <div class="slider-content">
-                    <img src="../resources/about-us/our team/2.jpg" alt="">
-                    <div class="team-description">
-                        <h2>Chanel Iman</h2>
-                        <h3>CFO</h3>
-                    </div>
-                </div>
-                <div class="slider-content">
-                    <img src="../resources/about-us/our team/3.jpg" alt="">
-                    <div class="team-description">
-                        <h2>Kate Upton</h2>
-                        <h3>Web Developer</h3>
-                    </div>
-                </div>
-                <script src="../js/about-us-slider.js"></script>
-            </div>
+                <?php
+                    $stafi = new AUDashboardController;
+                    $allStaf = $stafi->readData();
+                    for($i=0;$i<count($allStaf);$i++){
+                        echo '
+
+                        
+                            <div class="slider-content">
+                            <img src=" '.$allStaf[$i]['staff_image'] .'">
+                            <div class="team-description">
+                                <h2>'.$allStaf[$i]['staff_name'].'</h2>
+                                <h3>'.$allStaf[$i]['staff_position'].'</h3>
+                            </div>
+                            </div>                     
+                        ';
+                    }
+                ?>    
+                
+                </div>    
         </div>
         <div class="footer">
             <div class="row">
@@ -124,4 +116,5 @@
         </div>
         <script src="../menuToggler.js"></script>
     </body>
+    <script src="../js/about-us-slider.js"></script>
 </html>

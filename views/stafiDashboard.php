@@ -30,44 +30,46 @@
             </ul>
         </div>
         </nav>
-        <h2 class="my-cart">Messages Dashboard</h2>
+        <h2 class="my-cart">Stafi Dashboard</h2>
         <div class="cart">
             <div class="cart-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Message</th>
-                            <th>Delete</th>
+                            <th>Foto</th>
+                            <th>Emri</th>
+                            <!-- <th>Password</th> -->
+                            <th>pozita</th>
+                            <th>Edit / Delete</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php 
-                            $messages = new DashboardController;
-                            $allMessages = $messages->readMessages();
-                            foreach($allMessages as $message):
+                    <?php 
+                            $staf = new DashboardController;
+                            $allStaf = $staf->readStaf();
+                            foreach($allStaf as $staf):
                         ?>
                         <tr>
                             <td>
-                                <?php echo $message['sender_name'] ?>
+                                <?php echo $image['image'] ?> 
                             </td>
                             <td>
-                            <p class="name"><?php echo $message['sender_email'] ?></p>
+                                <?php echo $name['name'] ?>
                             </td>
                             <td>
-                                <div class="cart-product-description">
-                                    <p class"description"><?php echo $message['sender_message'] ?></p>
-                                </div>
+                                <?php echo $position['position'] ?>
                             </td>
-                            <td width="80px"><a href="delete-message.php?id=<?php echo $message['Id'];?>"><i class="fa-solid fa-trash"></i></a></td>
+                            <td width="80px"><a href="edit-stafi.php?id=<?php echo $staf['Id'];?>"><i class="fa-solid fa-pen-to-square"></i></a> 
+                            | <a href="delete-staf.php?id=<?php echo $staf['Id'];?>"><i class="fa-solid fa-trash"></i></a></td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
         </div>
+        <?php if(false){ ?>
         <a class="redirect" href="../index.php" class="insert-data">Go to website</a>
+        <?php }?>
 
         <style>
             .redirect{

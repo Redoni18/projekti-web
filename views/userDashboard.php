@@ -30,37 +30,36 @@
             </ul>
         </div>
         </nav>
-        <h2 class="my-cart">Messages Dashboard</h2>
+        <h2 class="my-cart">User Dashboard</h2>
         <div class="cart">
             <div class="cart-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>Name</th>
                             <th>Email</th>
-                            <th>Message</th>
-                            <th>Delete</th>
+                            <th>Username</th>
+                            <!-- <th>Password</th> -->
+                            <th>Role</th>
+                            <th>Edit / Delete</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php 
-                            $messages = new DashboardController;
-                            $allMessages = $messages->readMessages();
-                            foreach($allMessages as $message):
+                    <?php 
+                            $user = new DashboardController;
+                            $allUsers = $user->readUser();
+                            foreach($allUsers as $user):
                         ?>
                         <tr>
                             <td>
-                                <?php echo $message['sender_name'] ?>
+                                <?php echo $user['email'] ?>
                             </td>
                             <td>
-                            <p class="name"><?php echo $message['sender_email'] ?></p>
+                                <?php echo $user['username'] ?>
                             </td>
                             <td>
-                                <div class="cart-product-description">
-                                    <p class"description"><?php echo $message['sender_message'] ?></p>
-                                </div>
+                                <?php echo $user['user_role'] ?>
                             </td>
-                            <td width="80px"><a href="delete-message.php?id=<?php echo $message['Id'];?>"><i class="fa-solid fa-trash"></i></a></td>
+                            <td width="80px"><a href="edit-user.php?id=<?php echo $user['id'];?>"><i class="fa-solid fa-pen-to-square"></i></a> | <a href="delete-user.php?id=<?php echo $user['id'];?>"><i class="fa-solid fa-trash"></i></a></td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>

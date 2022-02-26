@@ -1,8 +1,5 @@
 
-document.getElementById("submit").addEventListener("click", function(event){
-    event.preventDefault()
-
-
+function validoSignUp(e){
     var regexEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
     var regexPas = /^[A-Z]{1}[a-z]{5,}\d{2}$/;
 
@@ -16,7 +13,7 @@ document.getElementById("submit").addEventListener("click", function(event){
     console.log(validimiPas)
 
     if(validimiEmail && validimiPas){
-        alert('Account created successfully!')
+        e.preventDefault()
     }else{
         if(!validimiEmail){
             alert("Email should follow email format rules")
@@ -26,4 +23,4 @@ document.getElementById("submit").addEventListener("click", function(event){
             alert("Password must start with a capital letter and end with 2 numbers and have at least 8 characters")
         }
     }
-});
+}

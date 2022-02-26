@@ -1,3 +1,39 @@
+<?php
+    require_once '../views/user.php';
+    require_once '../config/Database.php';
+    require_once '../controllers/DashboardController.php';
+
+    $db = new Database;
+
+    session_start(); 
+    $userInsert = new DashboardController;
+
+    if(isset($_POST['submit'])){
+        $errors = [];
+
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        if (empty($username) || empty($password)) {
+            array_push($errors,'Ploteso te gjitha fushat!');
+        }
+        $queryU= $db->pdo->query("SELECT * FROM `user` WHERE `username` = '$username'");
+
+        $queryUP = $db->pdo->query("SELECT * FROM `user` WHERE `username` = '$username' and `username` = '$password'");
+
+
+        if(!count($queryU->fetchAll()) ){
+           array_push($errors,'Ky username nuk ekziston');
+        }if(!count($queryUP->fetchAll())){
+            array_push($errors,'Username dhe password nuk perputhen!');
+        }
+        if(count($errors) == 0){
+            header('index.php');
+        }
+        $_SESSION['errors'] = $errors;
+        session_destroy();
+    }
+?>
 <!DOCTYPE html>
 
 <html>
@@ -13,6 +49,14 @@
         <link rel="stylesheet" href="../css/account.css">
         <link rel="stylesheet" href="../css/footer.css">
     </head>
+    <style>
+        p.error{
+            border-radius:5px;
+            color:red;
+            border:1px solid red;
+            padding:10px;margin:10px;
+        }
+    </style>
     <body>
         <div class="differentPage">
             <div class="container">
@@ -45,10 +89,15 @@
         <div class="account-page">
             <div class="login-form-element">
                 <p class="log-in" align="center">Log in</p>
-                    <form class="login-form">
-                        <input id="username" class="firstInfo " type="text" align="center" placeholder="Username" required="true">
-                        <input id="password" class="password" type="password" align="center" placeholder="Password">
-                        <input type="submit" class="submit" align="center" value="Sign In" id="submit">
+                <?php 
+                if(isset($_SESSION["errors"]))
+                    foreach($_SESSION["errors"] as $error)
+                        echo '<p class="error">'.$error.'</p>';
+                ?>
+                    <form class="login-form" method = 'POST'>
+                        <input id="username" class="firstInfo " type="text" align="center" placeholder="Username" required="true" name="username">
+                        <input id="password" class="password" type="password" align="center" placeholder="Password" name="password">
+                        <input type="submit" class="submit" align="center" value="Sign In" id="submit" name="submit">
                         <div class="sign-up-message" style="margin-top: 25px;font-size: 13px;">
                             <p align="center">Don't have an account? <a href="./signup.php" style="color: dodgerblue;">Sign up</a></p>
                         </div>
