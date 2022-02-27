@@ -40,7 +40,7 @@
             setcookie( $secName, $secValue, $expire);
             
 
-            header('Location: ../index.php');
+            header('Location: ../pages/index.php');
         }
         $_SESSION['errors'] = $errors;
     }

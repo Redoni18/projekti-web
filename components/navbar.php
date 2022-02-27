@@ -3,7 +3,7 @@
         <?php 
             if(!isset($_SESSION['roli'])){
         ?>  
-            <li><a href="../index.php">Home</a></li>
+            <li><a href="../pages/index.php">Home</a></li>
             <li><a href="../pages/login.php">Account</a></li>
         <?php
             }
@@ -11,7 +11,7 @@
         <?php
         if(isset($_SESSION['roli']) && isset($_SESSION['username'])){
         ?>
-            <li><a href="../index.php">Home</a></li>
+            <li><a href="../pages/index.php">Home</a></li>
             <div class="dropdown">
             <li class="dropbtn">Products</li>
             <div class="dropdown-content">
@@ -35,7 +35,6 @@
             <?php
                 if ($_SESSION['roli']==2) {
                     ?>
-                    <li><a href="../pages/cart.php"><i class="fa fa-cart-plus"></i></a></li>
                     <li><a href="../views/logout.php">Logout</a></li>
                 <?php
                 }

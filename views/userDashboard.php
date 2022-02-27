@@ -70,7 +70,7 @@
                 </table>
             </div>
         </div>
-        <a class="redirect" href="../index.php" class="insert-data">Go to website</a>
+        <a class="redirect" href="../pages/index.php" class="insert-data">Go to website</a>
     <?php
         }else{
     ?>  

@@ -84,7 +84,7 @@
             </div>
         </div>
         <a href="insert-products.php" class="insert-data">Insert a product</a>
-        <a class="redirect" href="../index.php" class="insert-data">Go to website</a>
+        <a class="redirect" href="../pages/index.php" class="insert-data">Go to website</a>
     <?php
         }else{
     ?>  
