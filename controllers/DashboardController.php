@@ -239,5 +239,12 @@
     
             return header('Location: userDashboard.php');
         }
+
+        public function readUserData($username){
+            $query = $this->db->pdo->prepare('SELECT * from user WHERE username LIKE :username');
+            $query->bindParam(':username', $username);
+            $query->execute();
+            return $query->fetch(PDO::FETCH_ASSOC);
+        }
     }
 ?>

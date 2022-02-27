@@ -1,6 +1,6 @@
 
-document.getElementById("submit").addEventListener("click", function(event){
-    event.preventDefault()
+
+function validoLogin(e){
 
 
     var regexUsername = /^[A-Za-z]{8,}$/;
@@ -17,7 +17,7 @@ document.getElementById("submit").addEventListener("click", function(event){
     console.log(validimiPas)
 
     if(validimiUsername && validimiPas){
-        alert('You are now logged in!')
+        e.preventDefault()
     }else{
         if(!validimiUsername){
             alert("Username must contain at least 8 characters, and not contain numbers or symbols")
@@ -27,4 +27,4 @@ document.getElementById("submit").addEventListener("click", function(event){
             alert("Password must start with a capital letter and end with 2 numbers and have at least 8 characters")
         }
     }
-});
+}

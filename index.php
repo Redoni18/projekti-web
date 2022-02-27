@@ -1,6 +1,7 @@
 <?php 
     session_start();
     require_once './controllers/DashboardController.php';
+    print_r($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +39,17 @@
                               </div> 
                               <li><a href="./pages/about-us.php">About us</a></li>
                               <li><a href="./pages/contact-us.php">Contact us</a></li>
-                              <li><a href="./pages/login.php">Account</a></li>
+                              <?php
+                                if (isset($_SESSION['roli']) && $_SESSION['roli']==1) {
+                                    ?>
+                                    <li><a href="./views/logout.php">Logout</a></li>
+                                <?php
+                                }else{
+                                    ?>
+                                    <li><a href="./pages/login.php">lksadjfksdjf</a></li>
+                                    <?php
+                                }
+                            ?>
                               <li><a href="./pages/cart.php"><i class="fa fa-cart-plus"></i></a></li>
                             </ul>
                         </nav>

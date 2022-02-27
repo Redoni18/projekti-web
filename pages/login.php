@@ -1,11 +1,10 @@
 <?php
-    require_once '../views/user.php';
+    session_start(); 
     require_once '../config/Database.php';
     require_once '../controllers/DashboardController.php';
 
     $db = new Database;
 
-    session_start(); 
     $userInsert = new DashboardController;
 
     if(isset($_POST['submit'])){
@@ -17,18 +16,31 @@
         if (empty($username) || empty($password)) {
             array_push($errors,'Ploteso te gjitha fushat!');
         }
-        $queryU= $db->pdo->query("SELECT * FROM `user` WHERE `username` = '$username'");
+        $queryU= $db->pdo->query("SELECT * FROM user WHERE username LIKE '$username'");
 
-        $queryUP = $db->pdo->query("SELECT * FROM `user` WHERE `username` = '$username' and `username` = '$password'");
-
+        $userPassword = $userInsert->readUserData($username);
 
         if(!count($queryU->fetchAll()) ){
            array_push($errors,'Ky username nuk ekziston');
-        }if(!count($queryUP->fetchAll())){
-            array_push($errors,'Username dhe password nuk perputhen!');
+        }
+        if(!password_verify($password, $userPassword['user_password'])){
+            array_push($errors,'Password nuk eshte i sakte!');
         }
         if(count($errors) == 0){
-            header('index.php');
+            $_SESSION['roli'] = $userPassword['user_role'];
+  			$_SESSION['username'] = $userPassword['username'];
+
+            $name   = 'timeOfLogin';
+            $value  = date("h:ia");
+            $expire = time() + 60 * 60 * 24 * 30;
+            setcookie( $name, $value, $expire);
+              
+            $secName   = 'username';
+            $secValue  = $userPassword['username'];
+            setcookie( $secName, $secValue, $expire);
+            
+
+            header('Location: index.php');
         }
         $_SESSION['errors'] = $errors;
         session_destroy();
@@ -97,7 +109,7 @@
                     <form class="login-form" method = 'POST'>
                         <input id="username" class="firstInfo " type="text" align="center" placeholder="Username" required="true" name="username">
                         <input id="password" class="password" type="password" align="center" placeholder="Password" name="password">
-                        <input type="submit" class="submit" align="center" value="Sign In" id="submit" name="submit">
+                        <input type="submit" onclick="validoLogin(e)" class="submit" align="center" value="Sign In" id="submit" name="submit">
                         <div class="sign-up-message" style="margin-top: 25px;font-size: 13px;">
                             <p align="center">Don't have an account? <a href="./signup.php" style="color: dodgerblue;">Sign up</a></p>
                         </div>
