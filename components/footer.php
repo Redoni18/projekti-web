@@ -1,11 +1,11 @@
 <div class="footer">
     <div class="footer-row">
         <div class="footer-column">
-            <p>&copy; Copyright by: Redon Emini &amp; Vullnet Kabashi</p>
+            <p>&copy; Redon Emini &amp; Vullnet Kabashi</p>
         </div>
         <div class="footer-column">
             <div class="logo-div">
-                <img class="footer-logo" src="../TheIncredibleTrueStory.png" alt="logo image">
+                <h1><a href=",./pages/index.php" style="color:white;">Gjirafa60</a></h1>
             </div>
         </div>
         <div class="footer-column">

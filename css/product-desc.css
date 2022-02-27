@@ -1,12 +1,14 @@
 .product-desc {
-  height: 300px;
+  height: 400px;
   width: 600px;
   margin: 50px auto;
 }
+
 .product-img img {
   max-height: 200px;
   max-width: 300px;
 }
+
 .product {
   display: flex;
   flex-wrap: wrap;
@@ -18,8 +20,13 @@
   padding: 30px;
 }
 
+.product-details h4 {
+  inline-size: 250px;
+  overflow-wrap: break-word;
+}
+
 .product-details p {
-  inline-size: 200px;
+  inline-size: 250px;
   overflow-wrap: break-word;
 }
 .butonat {

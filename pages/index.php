@@ -22,7 +22,7 @@
             <div class="container">
                 <div class="header-div">
                     <div class="logo-div">
-                        <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
+                        <h1><a href="./index.php">Gjirafa60</a></h1>
                     </div>
                         <?php include '../components/navbar.php'; ?>
                         <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">
@@ -59,7 +59,7 @@
                         <?php
                         if (isset($_SESSION['roli'])) {
                                 ?>
-                                <h3><a href="../views/technology.php">Technology</a></h3>
+                                <h3><a href="../pages/technology.php">Technology</a></h3>
                             <?php
                             }else{
                                 ?>
@@ -74,7 +74,7 @@
                         <?php
                         if (isset($_SESSION['roli'])) {
                                 ?>
-                                <h3><a href="../views/apparel.php">Apparel</a></h3>
+                                <h3><a href="../pages/apparel.php">Apparel</a></h3>
                             <?php
                             }else{
                                 ?>
@@ -88,7 +88,7 @@
                         <?php
                         if (isset($_SESSION['roli'])) {
                                 ?>
-                                <h3><a href="../views/sports&entertainment.php">Sports & Entertainment</a></h3>
+                                <h3><a href="../pages/sports&entertainment.php">Sports & Entertainment</a></h3>
                             <?php
                             }else{
                                 ?>
@@ -102,7 +102,7 @@
                         <?php
                         if (isset($_SESSION['roli'])) {
                                 ?>
-                                <h3><a href="../views/home&garden.php">Home & Garden</a></h3>
+                                <h3><a href="../pages/home&garden.php">Home & Garden</a></h3>
                             <?php
                             }else{
                                 ?>

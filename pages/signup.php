@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="header-div">
                     <div class="logo-div">
-                        <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
+                        <h1><a href="./index.php">Gjirafa60</a></h1>
                     </div>
 
                     <?php include '../components/navbar.php'; ?>

@@ -72,9 +72,6 @@
         </div>
         <a href="insert-staf.php" class="insert-data">Insert staff</a>
         <a class="redirect" href="../pages/index.php" class="insert-data">Go to website</a>
-        <?php if(false){ ?>
-        <a class="redirect" href="../pages/index.php" class="insert-data">Go to website</a>
-        <?php }?>
     <?php
         }else{
     ?>
@@ -87,6 +84,15 @@
     ?>
 
         <style>
+
+            .insert-data{
+                margin-left:20px;
+                background: #333;
+                color: white;
+                padding: 10px;
+                border-radius: 15px;
+            }
+
             .redirect{
                 margin-left:20px;
                 background: #00ff48;

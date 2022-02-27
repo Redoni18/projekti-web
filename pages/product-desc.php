@@ -31,7 +31,7 @@
             <div class="container">
                 <div class="header-div">
                     <div class="logo-div">
-                        <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
+                        <h1><a href="./index.php">Gjirafa60</a></h1>
                     </div>
 
                     <?php include '../components/navbar.php'; ?>
@@ -67,10 +67,23 @@
                     </div>
                 </div>
             </div>
-            <div class="butonat">
-                <button class="butoni" style="background-color: aquamarine;">Purchase</button>
-                <button class="butoni" style="background-color: lightblue;">Add to cart</button>
-            </div>
+            <?php 
+                if(isset($_SESSION['roli'])){
+            ?>
+                <div class="butonat">
+                    <button class="butoni" style="background-color: aquamarine;">Purchase</button>
+                    <button class="butoni" style="background-color: lightblue;">Add to cart</button>
+                </div>
+            <?php 
+                }else{
+            ?>
+                <div class="butonat">
+                    <a class="butoni" style="background-color: aquamarine;" href="./login.php">Purchase</a>
+                    <a class="butoni" style="background-color: lightblue;" href="./login.php">Add to cart</a>
+                </div>
+            <?php
+                }
+            ?>
         </div>
 
         <?php include '../components/footer.php'; ?>

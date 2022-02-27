@@ -2,6 +2,9 @@
   padding: 25px;
   background-color: black;
   margin: auto;
+  position: relative;
+  margin-top: 130px;
+  max-width: 1550px;
 }
 
 .footer-logo {
@@ -17,6 +20,7 @@
   justify-content: space-around;
   align-items: center;
   margin: auto;
+  width: 100%;
 }
 
 .footer-column {
@@ -55,12 +59,13 @@
 
 @media only screen and (max-width: 760px) {
   .footer-logo {
-    width: 150px;
+    width: 100px;
   }
 
   .footer .footer-row {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 100%;
   }
 }

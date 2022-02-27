@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
 .container {
   max-width: 1400px;
   margin: auto;
@@ -6,16 +8,17 @@
   /* background-color: #f0f0f0; */
 }
 
-.logo {
-  width: 200px;
-}
-
 .header-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 50px;
   max-height: 300px;
+}
+
+.logo-div h1 a {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -101,14 +104,14 @@ nav {
 }
 
 @media only screen and (max-width: 1000px) {
-  .logo {
-    width: 150px;
+  .logo-div h1 a {
+    font-size: 25px;
   }
 }
 
-@media only screen and (max-width: 765px) {
-  .logo {
-    display: none;
+@media only screen and (max-width: 850px) {
+  .logo-div h1 a {
+    font-size: 20px;
   }
 
   nav ul {

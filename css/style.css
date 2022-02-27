@@ -108,6 +108,14 @@ small {
 }
 
 @media only screen and (max-width: 760px) {
+  .homepage {
+    width: 100%;
+  }
+
+  .container {
+    width: auto;
+  }
+
   .product-column {
     position: relative;
     flex-basis: 20%;
