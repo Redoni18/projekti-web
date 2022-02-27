@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once '../controllers/DashboardController.php';
 
     $products = new DashboardController;
@@ -14,7 +15,10 @@
 
 ?>
 
-<div>
+<?php
+    if (isset($_SESSION['roli']) && $_SESSION['roli']==1) {
+?>
+    <div>
     <form method="POST">
         Image:
         <input type="file" name="image" value="<?php echo $currentProduct['product_image']?>">
@@ -43,3 +47,6 @@
         <input type="submit" name="submit" value="Update">
     </form>
 </div>
+<?php 
+    }
+?>

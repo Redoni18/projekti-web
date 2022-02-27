@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once '../controllers/DashboardController.php';
 ?>
 
@@ -17,7 +18,10 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <nav class="navbar">
+    <?php
+        if (isset($_SESSION['roli']) && $_SESSION['roli']==1) {
+        ?>
+            <nav class="navbar">
         <div class="container">
             <div class="logo">
             Admin Page
@@ -68,6 +72,16 @@
             </div>
         </div>
         <a class="redirect" href="../index.php" class="insert-data">Go to website</a>
+    <?php
+        }else{
+    ?>  
+        <div style="margin: 10px;">
+            <h1 style="font-family: times new roman;font-size: 60px;">Error 403</h1>
+            <h1 style="font-family: times new roman;font-size: 60px;">Kqyr me sy e sosht per ty</h1>
+        </div>
+    <?php
+        }
+    ?>
 
         <style>
             .redirect{

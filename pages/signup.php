@@ -102,7 +102,7 @@
                         <input id="email" class="firstInfo " type="text" align="center" placeholder="Email"  required="true" name="email">
                         <input id="username" class="firstInfo" type="text" align="center" placeholder="Username" required="true" name="username">
                         <input id="password" class="password" type="password" align="center" placeholder="Password" required="true" name="password">
-                        <input class="submit" id="submit" onclick="validoSignUp(e)" type="submit" name="submit" value="Sign Up"></input>
+                        <input class="submit" id="submit" onclick="validoSignUp()" type="submit" name="submit" value="Sign Up"></input>
                         <div class="sign-up-message" style="margin-top: 25px;font-size: 13px;">
                             <p align="center">Already have an account? <a href="./login.php" style="color: dodgerblue;">Log in</a></p>
                         </div>

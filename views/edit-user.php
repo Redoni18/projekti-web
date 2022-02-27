@@ -1,4 +1,5 @@
 <?php
+    session_start();
 require_once '../controllers/DashboardController.php';
 
 $user = new DashboardController;
@@ -15,7 +16,10 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<form method="POST">
+<?php
+    if (isset($_SESSION['roli']) && $_SESSION['roli']==1) {
+?>
+    <form method="POST">
     Email:   
     <input type="text" name="email" value="<?php echo $currentUser['email'];?>">
     <br>
@@ -27,3 +31,6 @@ if(isset($_POST['submit'])){
     <br>
     <input type="submit" name="submit" value="Update">
 </form>
+<?php 
+    }
+?>

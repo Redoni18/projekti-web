@@ -106,7 +106,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 765px) {
   .logo {
     display: none;
   }

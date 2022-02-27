@@ -79,6 +79,13 @@ small {
   margin-top: 10px;
 }
 
+.product-text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
 @media only screen and (max-width: 1000px) {
   .product-category {
     max-width: 200px;
@@ -90,6 +97,13 @@ small {
 
   .logo {
     width: 500px;
+  }
+
+  .product-text p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
   }
 }
 
@@ -121,7 +135,13 @@ small {
   }
 
   .product-category img {
-    width: 200px;
+    width: 150px;
+  }
+
+  .product-category h3 {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
   }
 }
 
@@ -161,10 +181,4 @@ small {
   bottom: 0;
   left: 1;
   text-align: left;
-}
-.product-text p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 200px;
 }

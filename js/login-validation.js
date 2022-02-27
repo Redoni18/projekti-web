@@ -1,6 +1,6 @@
 
 
-function validoLogin(e){
+function validoLogin(){
 
 
     var regexUsername = /^[A-Za-z]{8,}$/;
@@ -17,7 +17,7 @@ function validoLogin(e){
     console.log(validimiPas)
 
     if(validimiUsername && validimiPas){
-        e.preventDefault()
+        return;
     }else{
         if(!validimiUsername){
             alert("Username must contain at least 8 characters, and not contain numbers or symbols")

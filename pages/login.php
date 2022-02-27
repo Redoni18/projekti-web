@@ -40,10 +40,9 @@
             setcookie( $secName, $secValue, $expire);
             
 
-            header('Location: index.php');
+            header('Location: ../index.php');
         }
         $_SESSION['errors'] = $errors;
-        session_destroy();
     }
 ?>
 <!DOCTYPE html>
@@ -109,7 +108,7 @@
                     <form class="login-form" method = 'POST'>
                         <input id="username" class="firstInfo " type="text" align="center" placeholder="Username" required="true" name="username">
                         <input id="password" class="password" type="password" align="center" placeholder="Password" name="password">
-                        <input type="submit" onclick="validoLogin(e)" class="submit" align="center" value="Sign In" id="submit" name="submit">
+                        <input type="submit" onclick="validoLogin()" class="submit" align="center" value="Sign In" id="submit" name="submit">
                         <div class="sign-up-message" style="margin-top: 25px;font-size: 13px;">
                             <p align="center">Don't have an account? <a href="./signup.php" style="color: dodgerblue;">Sign up</a></p>
                         </div>

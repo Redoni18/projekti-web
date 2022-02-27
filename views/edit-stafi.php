@@ -1,4 +1,5 @@
 <?php
+    session_start();
 require_once '../controllers/DashboardController.php';
 
 $stafi = new DashboardController;
@@ -15,7 +16,10 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<form method="POST">
+<?php
+    if (isset($_SESSION['roli']) && $_SESSION['roli']==1) {
+?>
+    <form method="POST">
     Image:
     <input type="file" name="image" value="<?php echo $currentStafi['staff_image'];?>">
     <br>
@@ -27,3 +31,7 @@ if(isset($_POST['submit'])){
     <br>
     <input type="submit" name="submit" value="Update">
 </form>
+<?php 
+    }
+?>
+

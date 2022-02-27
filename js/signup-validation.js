@@ -1,5 +1,5 @@
 
-function validoSignUp(e){
+function validoSignUp(){
     var regexEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
     var regexPas = /^[A-Z]{1}[a-z]{5,}\d{2}$/;
 
@@ -13,7 +13,7 @@ function validoSignUp(e){
     console.log(validimiPas)
 
     if(validimiEmail && validimiPas){
-        e.preventDefault()
+        alert('Regjistrimi perfundoi me sukses')
     }else{
         if(!validimiEmail){
             alert("Email should follow email format rules")
