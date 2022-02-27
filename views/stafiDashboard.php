@@ -42,7 +42,6 @@
                         <tr>
                             <th>Foto</th>
                             <th>Emri</th>
-                            <!-- <th>Password</th> -->
                             <th>pozita</th>
                             <th>Edit / Delete</th>
                         </tr>
@@ -55,13 +54,13 @@
                         ?>
                         <tr>
                             <td>
-                                <?php echo $image['image'] ?> 
+                                <?php echo $staf['staff_image'] ?> 
                             </td>
                             <td>
-                                <?php echo $name['name'] ?>
+                                <?php echo $staf['staff_name'] ?>
                             </td>
                             <td>
-                                <?php echo $position['position'] ?>
+                                <?php echo $staf['staff_position'] ?>
                             </td>
                             <td width="80px"><a href="edit-stafi.php?id=<?php echo $staf['Id'];?>"><i class="fa-solid fa-pen-to-square"></i></a> 
                             | <a href="delete-staf.php?id=<?php echo $staf['Id'];?>"><i class="fa-solid fa-trash"></i></a></td>
@@ -71,6 +70,8 @@
                 </table>
             </div>
         </div>
+        <a href="insert-staf.php" class="insert-data">Insert staff</a>
+        <a class="redirect" href="../pages/index.php" class="insert-data">Go to website</a>
         <?php if(false){ ?>
         <a class="redirect" href="../pages/index.php" class="insert-data">Go to website</a>
         <?php }?>

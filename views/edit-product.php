@@ -42,7 +42,7 @@
         <input type="number" name="quantity" value="<?php echo $currentProduct['product_quantity']?>">
         <br>
         Price:
-        <input type="number" name="price" value="<?php echo $currentProduct['product_price']?>">
+        <input type="number" step="0.01" name="price" value="<?php echo $currentProduct['product_price']?>">
         <br>
         <input type="submit" name="submit" value="Update">
     </form>

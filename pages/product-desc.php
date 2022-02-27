@@ -56,7 +56,7 @@
                         echo '<p>Out of stock</p>';
                     }
                     ?>
-                    <p>Price: $<?php echo $productDetail['product_price'] ?>.00</p>
+                    <p>Price: $<?php echo $productDetail['product_price'] ?></p>
                     <p>Payment methods:</p>
                     <div class="payment-methods" style="margin: 5px 0;">
                         <i class="fa fa-paypal"></i>

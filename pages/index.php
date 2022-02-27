@@ -56,19 +56,60 @@
                 <div class="row">
                     <div class="product-category">
                         <img src="../resources/categories/tech-category.png" alt="">
-                        <h3><a href="./technology.php">Technology</a></h3>
+                        <?php
+                        if (isset($_SESSION['roli'])) {
+                                ?>
+                                <h3><a href="../views/technology.php">Technology</a></h3>
+                            <?php
+                            }else{
+                                ?>
+                                <h3><a href="./login.php">Technology</a></h3>
+                            <?php
+                            }
+                        ?>
+                        
                     </div>
                     <div class="product-category">
                         <img src="../resources/categories/apparel.jpg" alt="">
-                        <h3><a href="./apparel.php">Apparel</a></h3>
+                        <?php
+                        if (isset($_SESSION['roli'])) {
+                                ?>
+                                <h3><a href="../views/apparel.php">Apparel</a></h3>
+                            <?php
+                            }else{
+                                ?>
+                                <h3><a href="./login.php">Apparel</a></h3>
+                            <?php
+                            }
+                        ?>
                     </div>
                     <div class="product-category">
                         <img src="../resources/categories/sport&entertainment.jpg" alt="">
-                        <h3><a href="./sports&entertainment.php">Sports & Entertainment</a></h3>
+                        <?php
+                        if (isset($_SESSION['roli'])) {
+                                ?>
+                                <h3><a href="../views/sports&entertainment.php">Sports & Entertainment</a></h3>
+                            <?php
+                            }else{
+                                ?>
+                                <h3><a href="./login.php">Sports & Entertainment</a></h3>
+                            <?php
+                            }
+                        ?>
                     </div>
                     <div class="product-category">
                         <img src="../resources/categories/home&garden.jpg" alt="">
-                        <h3><a href="./home&garden.php">Home & Garden</a></h3>
+                        <?php
+                        if (isset($_SESSION['roli'])) {
+                                ?>
+                                <h3><a href="../views/home&garden.php">Home & Garden</a></h3>
+                            <?php
+                            }else{
+                                ?>
+                                <h3><a href="./login.php">Home & Garden</a></h3>
+                            <?php
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -88,7 +129,7 @@
                         </div>
                         <div class="product-text">
                             <p style="font-size: 15px;"><a href="./product-desc.php?id='.$product['Id'].'">' .$product['product_name'] .'</a></p>
-                            <p><small>$' .$product['product_price'] .'.00</small></p>
+                            <p><small>$' .$product['product_price'] .'</small></p>
                         </div>
                     </div>';
                 }

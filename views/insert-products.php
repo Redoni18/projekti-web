@@ -36,7 +36,7 @@
         <input type="number" name="quantity">
         <br>
         Price:
-        <input type="number" name="price">
+        <input type="number" step="0.01" name="price">
         <br>
         <input type="submit" name="submit" value="Save">
     </form>

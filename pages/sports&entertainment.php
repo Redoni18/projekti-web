@@ -71,7 +71,7 @@
                             <div class="product-text">
                                 <p style="font-size: 15px;"><a href="./product-desc.php?id='.$SEProduct['Id'].'">
                                 '. $SEProduct['product_name'] .'</a></p>
-                                <p><small>$'. $SEProduct['product_price'] .'.00</small></p>
+                                <p><small>$'. $SEProduct['product_price'] .'</small></p>
                             </div>
                         </div>
                         ';
