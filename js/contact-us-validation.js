@@ -1,4 +1,4 @@
-function validoMesazhin(event){
+function validoMesazhin(){
     if(document.getElementById('emri').value == null || document.getElementById('emri').value === ''){
         alert('Duhet të plotësoni emrin!');
         return;
@@ -15,7 +15,7 @@ function validoMesazhin(event){
         return;
     }
     else {
-        event.preventDefault()
+        return;
     }
 }
 function validoRegexE(){

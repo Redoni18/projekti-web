@@ -17,8 +17,20 @@
         $password = $_POST['password'];
         $errors = [];
 
-        if (empty($email) || empty($password) ||empty($username)) {
+        if (empty(trim($email)) || empty(trim($password)) || empty(trim($username))) {
             array_push($errors,'Ploteso te gjitha fushat!');
+        }else{
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                array_push($errors,'Invalid Email');
+            }
+            
+            if (!preg_match("/^[A-Z]{1}[a-z]{5,}\d{2}$/",$password)){
+                array_push($errors,'Invalid password input');
+            }
+            
+            if (!preg_match("/^[A-Za-z]{8,}$/",$username)){
+                array_push($errors,'Invalid username input');
+            }
         }
         $queryE= $db->pdo->query("SELECT * FROM `user` WHERE `email` = '$email'");
         $queryU= $db->pdo->query("SELECT * FROM `user` WHERE `username` = '$username'");

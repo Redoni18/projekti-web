@@ -9,15 +9,22 @@
         $errors=[];
 
         $name = $_POST['name'];
-        $email = $_POST['name'];
-        $message = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
 
-        if(empty($name) || empty($name) || empty($name)){
+        if(empty($name) || empty(trim($name)) || empty($email) || empty($message)){
             array_push($errors,'Ploteso te gjitha fushat!');
             $_SESSION['errors'] = $errors;
         }else{
-            $messages->sendMessage($_POST);
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                array_push($errors,'Invalid Email');
+            }else if (!preg_match("/^[a-zA-Z-' ]*$/",$name)){
+                array_push($errors,'Invalid name');
+            }else{
+                $messages->sendMessage($_POST);
+            }
         }
+        $_SESSION['errors'] = $errors;
     }
 
 ?>
@@ -75,7 +82,7 @@
                     <textarea class="InputM" id="mesazhi" type="text" placeholder="Your message" style="resize: none;" name="message"></textarea>
                 </div>
                 <br>
-                <input class="formButton" type="submit" onclick="validoMesazhin(event)" name="submit" value="Send Message"></input>
+                <input style="cursor: pointer;" class="formButton" type="submit" onclick="validoMesazhin()" name="submit" value="Send Message"></input>
             </form>
         </div>
 
