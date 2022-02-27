@@ -75,24 +75,9 @@
                     <div class="logo-div">
                         <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
                     </div>
-                    <nav>
-                    <ul class="nav-list" id="menu-items">
-                            <li><a href="../index.php">Home</a></li>
-                            <div class="dropdown">
-                                <li class="dropbtn">Products</li>
-                                <div class="dropdown-content">
-                                  <a href="./technology.php">Technology</a>
-                                  <a href="./apparel.php">Apparel</a>
-                                  <a href="./sports&entertainment.php">Sports & Entertainment</a>
-                                  <a href="./home&garden.php">Home & Garden</a>
-                                </div>
-                              </div> 
-                            <li><a href="./about-us.php">About us</a></li>
-                            <li><a href="./contact-us.php">Contact us</a></li>
-                            <li><a href="#">Account</a></li>
-                            <li><a href="./cart.php"><i class="fa fa-cart-plus"></i></a></li>
-                        </ul>
-                    </nav>
+
+                    <?php include '../components/navbar.php'; ?>
+                    
                     <img src="../menu.png" alt="menu" class="menu" onclick="toggleMenu()">
                 </div>
             </div>
@@ -141,33 +126,8 @@
             </div>
         </div> -->
 
-        <div class="footer">
-            <div class="row">
-                <div class="footer-column">
-                    <p>&copy; Copyright by: Redon Emini &amp; Vullnet Kabashi</p>
-                </div>
-                <div class="footer-column">
-                    <div class="logo-div">
-                        <img class="logo" src="../TheIncredibleTrueStory.png" alt="logo image">
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <div class="follow">
-                        <p>Follow us</p>
-                    </div>
-                    <div class="socials">
-                        <ul class="social-list">
-                            <a href="https://www.instagram.com/" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
-                            <a href="https://www.facebook.com/" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                            <a href="https://www.pinterest.com/" target="_blank"><li><i class="fa fa-pinterest"></i></li></a>
-                            <a href="https://www.twitter.com/" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
-                            <a href="https://www.linkedin.com/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                            <a href="https://www.reddit.com/" target="_blank"><li><i class="fa fa-reddit"></i></li></a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include '../components/footer.php'; ?>
+
         <script src="../js/login-validation.js"></script>
         <script src="../menuToggler.js"></script>
     </body>

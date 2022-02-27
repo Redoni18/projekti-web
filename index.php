@@ -49,7 +49,7 @@
                               </div>  
                                 <li><a href="./pages/about-us.php">About us</a></li>
                                 <li><a href="./pages/contact-us.php">Contact us</a></li>
-                                <li><a href="./views/logout.php">Logout</a></li>
+                                <!-- <li><a href="./views/logout.php">Logout</a></li> -->
                                 <?php
                                     if ($_SESSION['roli']==1) {
                                         ?>
@@ -62,6 +62,7 @@
                                     if ($_SESSION['roli']==2) {
                                         ?>
                                         <li><a href="./pages/cart.php"><i class="fa fa-cart-plus"></i></a></li>
+                                        <li><a href="./views/logout.php">Logout</a></li>
                                     <?php
                                     }
                                 ?>
