@@ -62,8 +62,8 @@
                             <td>
                                 <?php echo $staf['staff_position'] ?>
                             </td>
-                            <td width="80px"><a href="edit-stafi.php?id=<?php echo $staf['Id'];?>"><i class="fa-solid fa-pen-to-square"></i></a> 
-                            | <a href="delete-staf.php?id=<?php echo $staf['Id'];?>"><i class="fa-solid fa-trash"></i></a></td>
+                            <td width="80px"><a href="edit-stafi.php?id=<?php echo $staf['id'];?>"><i class="fa-solid fa-pen-to-square"></i></a> 
+                            | <a href="delete-staf.php?id=<?php echo $staf['id'];?>"><i class="fa-solid fa-trash"></i></a></td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>

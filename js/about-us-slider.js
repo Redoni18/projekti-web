@@ -31,8 +31,8 @@ function sliderFunction(){
             else if(slide.classList.contains('show-content') && index==nrSlide){
                 slide.classList.remove('show-content');
                 slide.classList.add('hidden-content');
-                slide.previousElementSibling.previousElementSibling.previousElementSibling.classList.remove('hidden-content');
-                slide.previousElementSibling.previousElementSibling.previousElementSibling.classList.add('show-content');
+                document.getElementsByClassName('slider-content')[0].classList.remove('hidden-content');
+                document.getElementsByClassName('slider-content')[0].classList.add('show-content');
                 index = 0;
                 break;
             }
